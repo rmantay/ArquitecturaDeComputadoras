@@ -38,7 +38,7 @@ module TestRX;
 	Rx uut (
 		.CLK(CLK), 
 		.RESET(RESET), 
-		.TICK(TICK2), 
+		.TICK(TICK), 
 		.RX(RX), 
 		.RX_DONE(RX_DONE), 
 		.DOUT(DOUT),
@@ -58,9 +58,6 @@ module TestRX;
 
 	);
 	
-	wire TICK2;
-	
-	assign TICK2 = brg.TICK;
 
 	initial begin
 		// Initialize Inputs

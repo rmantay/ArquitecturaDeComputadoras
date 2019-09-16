@@ -1,0 +1,4 @@
+verilog work "Tx.v"
+verilog work "BaudRateGen.v"
+verilog work "TestTx.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

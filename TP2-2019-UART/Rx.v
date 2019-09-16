@@ -22,13 +22,13 @@ module Rx
 		#(parameter N_BIT = 8,
 					  N_TICK = 16)
 		(
-    input CLK,
-    input RESET,
-    input TICK,
-    input RX,
+    input wire CLK,
+    input wire RESET,
+    input wire TICK,
+    input wire RX,
     output reg RX_DONE,
-    output [7:0] DOUT,
-	 output [1:0] STATE
+    output wire [N_BIT-1:0] DOUT,
+	 output wire [1:0] STATE
     );
 	 
 	 localparam [1:0]

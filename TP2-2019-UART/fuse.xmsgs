@@ -5,10 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestRX.v" Line 61: &lt;<arg fmt="%s" index="1">TICK2</arg>&gt; is already implicitly declared earlier.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestRX.v" Line 48: Port <arg fmt="%s" index="1">Q</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestTx.v" Line 50: Port <arg fmt="%s" index="1">Q</arg> is not connected to this instance
 </msg>
 
 </messages>

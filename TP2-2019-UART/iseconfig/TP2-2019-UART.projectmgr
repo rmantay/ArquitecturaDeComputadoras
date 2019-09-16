@@ -23,13 +23,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -75,15 +75,18 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/TestBaudRate D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestBaudRate.v</ClosedNode>
+         <ClosedNode>/TestFIFO D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestFIFO.v</ClosedNode>
+         <ClosedNode>/TestRX D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestRX.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TestRX (D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestRX.v)</SelectedItem>
+         <SelectedItem>TestTx (D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestTx.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000010b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000010b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>TestRX (D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestRX.v)</CurrentItem>
+      <CurrentItem>TestTx (D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestTx.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

@@ -1,0 +1,10 @@
+Command line:
+   TestFIFO_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49183
+
+Mon Sep 16 16:28:16 2019
+
+
+ Elaboration Time: 0.21875 sec
