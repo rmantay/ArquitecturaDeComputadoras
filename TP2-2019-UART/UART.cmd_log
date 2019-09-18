@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.syr" 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.syr" 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.syr" 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.syr" 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.syr" 

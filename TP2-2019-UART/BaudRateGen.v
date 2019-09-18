@@ -40,15 +40,14 @@ module BaudRateGen
 		else if(CLK)
 			begin
 				if(contador==163) begin
-					ti = 1;
-					contador = 0;
+					ti <= 1;
+					contador <= 0;
 				end
 				else begin
-				 ti=0;
-				 contador = contador+1;
+				 ti<=0;
+				 contador <= contador+1;
 				 end
 			end
-			
 	 end
 	 
 	 assign TICK = ti;

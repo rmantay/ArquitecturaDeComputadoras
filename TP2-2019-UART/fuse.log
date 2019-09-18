@@ -1,24 +1,29 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestTx_isim_beh.exe" -prj "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestTx_beh.prj" "work.TestTx" "work.glbl" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestUART_isim_beh.exe" -prj "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestUART_beh.prj" "work.TestUART" "work.glbl" 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
 Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Tx.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Rx.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/FIFO.v" into library work
 Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/BaudRateGen.v" into library work
-Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestTx.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestUART.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestTx.v" Line 50: Port Q is not connected to this instance
 Completed static elaboration
-Fuse Memory Usage: 117112 KB
-Fuse CPU Usage: 749 ms
-Compiling module Tx
-Compiling module BaudRateGen
-Compiling module TestTx
+Fuse Memory Usage: 117176 KB
+Fuse CPU Usage: 796 ms
+Compiling module BaudRateGen(N=8,M=163)
+Compiling module Rx(N_BIT=8,N_TICK=16)
+Compiling module FIFO(B=8,W=4)
+Compiling module Tx(N_BIT=8,N_TICK=16)
+Compiling module UART
+Compiling module TestUART
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 4 Verilog Units
-Built simulation executable D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestTx_isim_beh.exe
-Fuse Memory Usage: 120680 KB
-Fuse CPU Usage: 905 ms
+Compiled 7 Verilog Units
+Built simulation executable D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestUART_isim_beh.exe
+Fuse Memory Usage: 121768 KB
+Fuse CPU Usage: 937 ms

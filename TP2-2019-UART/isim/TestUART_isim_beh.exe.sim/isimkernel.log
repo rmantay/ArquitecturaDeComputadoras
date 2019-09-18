@@ -1,0 +1,29 @@
+Command line:
+   TestUART_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49171
+
+Wed Sep 18 16:32:20 2019
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 1141.58 Meg
+
+ Total Signals          : 70
+ Total Nets             : 74
+ Total Signal Drivers   : 28
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 42
+ Total Traceable Variables  : 91
+ Total Scalar Nets and Variables : 1056
+Total Line Count : 282
+
+ Total Simulation Time: 9.26563 sec
+
+ Current Memory Usage: 828.027 Meg
+
+Wed Sep 18 16:34:05 2019
+
