@@ -1,0 +1,45 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.69 secs
+ 
+--> Parameter xsthdpdir set to D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.70 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Tx.v" in library work
+Compiling verilog file "Rx.v" in library work
+Module <Tx> compiled
+Compiling verilog file "FIFO.v" in library work
+Module <Rx> compiled
+Compiling verilog file "BaudRateGen.v" in library work
+Module <FIFO> compiled
+Compiling verilog file "UART.v" in library work
+Module <BaudRateGen> compiled
+Module <UART> compiled
+No errors in compilation
+Analysis of file <"UART.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.05 secs
+ 
+--> 
+
+Total memory usage is 168012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
