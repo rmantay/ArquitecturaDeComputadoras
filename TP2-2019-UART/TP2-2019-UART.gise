@@ -23,13 +23,17 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Rx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Rx_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Rx_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Rx_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TestBaudRate_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TestFIFO_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TestIntRx_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TestIntRx_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TestRX_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TestTx_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TestUART_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TestUART_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TestUART_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="UART.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="UART.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="UART.ngc"/>
@@ -56,38 +60,47 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1568848831" xil_pn:in_ck="4332044064924624894" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1568848830">
+    <transform xil_pn:end_ts="1569455247" xil_pn:in_ck="-8571029033210750650" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1569455247">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../TP1a/ADD.v"/>
+      <outfile xil_pn:name="../../TP1a/ALU.v"/>
+      <outfile xil_pn:name="../../TP1a/AND.v"/>
+      <outfile xil_pn:name="../../TP1a/NOR.v"/>
+      <outfile xil_pn:name="../../TP1a/OR.v"/>
+      <outfile xil_pn:name="../../TP1a/PROGRAMA.v"/>
+      <outfile xil_pn:name="../../TP1a/SRA.v"/>
+      <outfile xil_pn:name="../../TP1a/SRL.v"/>
+      <outfile xil_pn:name="../../TP1a/SUB.v"/>
+      <outfile xil_pn:name="../../TP1a/XOR.v"/>
       <outfile xil_pn:name="BaudRateGen.v"/>
       <outfile xil_pn:name="FIFO.v"/>
+      <outfile xil_pn:name="Int_Rx.v"/>
       <outfile xil_pn:name="Rx.v"/>
       <outfile xil_pn:name="TestBaudRate.v"/>
       <outfile xil_pn:name="TestFIFO.v"/>
+      <outfile xil_pn:name="TestIntRx.v"/>
       <outfile xil_pn:name="TestRX.v"/>
       <outfile xil_pn:name="TestTx.v"/>
       <outfile xil_pn:name="TestUART.v"/>
       <outfile xil_pn:name="Tx.v"/>
       <outfile xil_pn:name="UART.v"/>
     </transform>
-    <transform xil_pn:end_ts="1568848155" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9210217254500086861" xil_pn:start_ts="1568848155">
+    <transform xil_pn:end_ts="1569455203" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1975443456820037089" xil_pn:start_ts="1569455203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1568848155" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-9046631566684360011" xil_pn:start_ts="1568848155">
+    <transform xil_pn:end_ts="1569455203" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3608333888414403683" xil_pn:start_ts="1569455203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1568848155" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1685770041363512190" xil_pn:start_ts="1568848155">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1568848831" xil_pn:in_ck="4332044064924624894" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1568848831">
+    <transform xil_pn:end_ts="1569455203" xil_pn:in_ck="-8571029033210750650" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1569455203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -95,18 +108,30 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../TP1a/ADD.v"/>
+      <outfile xil_pn:name="../../TP1a/ALU.v"/>
+      <outfile xil_pn:name="../../TP1a/AND.v"/>
+      <outfile xil_pn:name="../../TP1a/NOR.v"/>
+      <outfile xil_pn:name="../../TP1a/OR.v"/>
+      <outfile xil_pn:name="../../TP1a/PROGRAMA.v"/>
+      <outfile xil_pn:name="../../TP1a/SRA.v"/>
+      <outfile xil_pn:name="../../TP1a/SRL.v"/>
+      <outfile xil_pn:name="../../TP1a/SUB.v"/>
+      <outfile xil_pn:name="../../TP1a/XOR.v"/>
       <outfile xil_pn:name="BaudRateGen.v"/>
       <outfile xil_pn:name="FIFO.v"/>
+      <outfile xil_pn:name="Int_Rx.v"/>
       <outfile xil_pn:name="Rx.v"/>
       <outfile xil_pn:name="TestBaudRate.v"/>
       <outfile xil_pn:name="TestFIFO.v"/>
+      <outfile xil_pn:name="TestIntRx.v"/>
       <outfile xil_pn:name="TestRX.v"/>
       <outfile xil_pn:name="TestTx.v"/>
       <outfile xil_pn:name="TestUART.v"/>
       <outfile xil_pn:name="Tx.v"/>
       <outfile xil_pn:name="UART.v"/>
     </transform>
-    <transform xil_pn:end_ts="1568848836" xil_pn:in_ck="4332044064924624894" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7585268155739247047" xil_pn:start_ts="1568848831">
+    <transform xil_pn:end_ts="1569455208" xil_pn:in_ck="-8571029033210750650" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3347193277130868573" xil_pn:start_ts="1569455203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -115,21 +140,21 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TestUART_beh.prj"/>
-      <outfile xil_pn:name="TestUART_isim_beh.exe"/>
+      <outfile xil_pn:name="Rx_beh.prj"/>
+      <outfile xil_pn:name="Rx_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1568848838" xil_pn:in_ck="-4832568308575577815" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6219622926534734154" xil_pn:start_ts="1568848836">
+    <transform xil_pn:end_ts="1569455208" xil_pn:in_ck="8732780297638759494" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-409115450308332122" xil_pn:start_ts="1569455208">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TestUART_isim_beh.wdb"/>
+      <outfile xil_pn:name="Rx_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

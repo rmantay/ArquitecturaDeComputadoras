@@ -1,7 +1,0 @@
-verilog work "Tx.v"
-verilog work "Rx.v"
-verilog work "FIFO.v"
-verilog work "BaudRateGen.v"
-verilog work "UART.v"
-verilog work "TestUART.v"
-verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

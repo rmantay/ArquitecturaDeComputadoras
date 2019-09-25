@@ -1,29 +1,44 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestUART_isim_beh.exe" -prj "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestUART_beh.prj" "work.TestUART" "work.glbl" 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntRx_isim_beh.exe -prj D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntRx_beh.prj work.TestIntRx work.glbl 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Tx.v" into library work
-Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Rx.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/XOR.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/SUB.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/SRL.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/SRA.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/OR.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/NOR.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/AND.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/ADD.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/ALU.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/../../TP1a/PROGRAMA.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Int_Rx.v" into library work
 Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/FIFO.v" into library work
-Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/BaudRateGen.v" into library work
-Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.v" into library work
-Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestUART.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntRx.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:329 - "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntRx.v" Line 70: Target <full> of concurrent assignment or output port connection should be a net type.
 Completed static elaboration
-Fuse Memory Usage: 117176 KB
+Fuse Memory Usage: 117048 KB
 Fuse CPU Usage: 796 ms
-Compiling module BaudRateGen(N=8,M=163)
-Compiling module Rx(N_BIT=8,N_TICK=16)
-Compiling module FIFO(B=8,W=4)
-Compiling module Tx(N_BIT=8,N_TICK=16)
-Compiling module UART
-Compiling module TestUART
+Compiling module Int_Rx
+Compiling module FIFO
+Compiling module ADD
+Compiling module SUB
+Compiling module AND
+Compiling module OR
+Compiling module XOR
+Compiling module SRA
+Compiling module SRL
+Compiling module NOR
+Compiling module ALU
+Compiling module ALU_HANDLER
+Compiling module TestIntRx
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 7 Verilog Units
-Built simulation executable D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestUART_isim_beh.exe
-Fuse Memory Usage: 121768 KB
-Fuse CPU Usage: 937 ms
+Compiled 14 Verilog Units
+Built simulation executable D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntRx_isim_beh.exe
+Fuse Memory Usage: 121640 KB
+Fuse CPU Usage: 1358 ms

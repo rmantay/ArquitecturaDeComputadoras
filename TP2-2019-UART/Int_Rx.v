@@ -27,7 +27,10 @@ module Int_Rx
 	input [NBIT-1:0]	data_in,
 	output [NBIT-1:0]	data_out,
 	output [2:0] SEL,
-	output RD_FIFO
+	output reg RD_FIFO,
+	
+	output [2:0] STATE, 
+	output [NBIT-1:0] DATOA, DATOB, OP, CH
     );
 localparam [2:0]
 idle= 3'b000,
@@ -52,12 +55,17 @@ reg [NBIT-1:0] op, op_next;
 reg [NBIT-1:0] datoB, datoB_next;
 reg [NBIT-1:0] d_out, d_out_next;
 reg [NBIT-1:0] ch;
-reg r_fifo, r_fifo_next;
+
 reg [2:0] select, select_next;
 
-assign RD_FIFO=r_fifo;
+
 assign data_out= d_out;
 assign SEL=select;
+
+assign STATE = state;
+assign CH = ch;
+assign DATOA = datoA;
+assign DATOB = datoB;
 
 always @(posedge CLK, posedge RESET)
 	if(RESET) begin
@@ -65,7 +73,6 @@ always @(posedge CLK, posedge RESET)
 	datoA <= 0;
 	op<= suma;
 	datoB <= 0;
-	r_fifo<=0;
 	d_out<=0;
 	select <=0;
 	end
@@ -74,7 +81,7 @@ always @(posedge CLK, posedge RESET)
 	datoA<= datoA_next;
 	op<= op_next;
 	datoB<= datoB_next;
-	r_fifo<= r_fifo_next;
+
 	d_out<= d_out_next;
 	select <=select_next;
 	end
@@ -88,7 +95,7 @@ always @(*)
 		datoA_next = datoA;
 		op_next=op;
 		datoB_next=datoB;
-		r_fifo=1'b0;
+		RD_FIFO = 0;
 		d_out_next=d_out;
 		select_next = select;
 		case(state)
@@ -97,7 +104,7 @@ always @(*)
 			state_next=idle;
 			else begin
 			ch = data_in;
-			r_fifo_next=1'b1;
+			RD_FIFO=1'b1;
 			ch=ch-48;
 			if(ch>=0&&ch<=9)
 			begin
@@ -107,12 +114,14 @@ always @(*)
 			else
 			state_next=idle;
 			end
+			
+			
 			dato_A:
 			if(FIFO_empty)
-			state_next = dato_A;
+				state_next = dato_A;
 			else begin
 			ch = data_in;
-			r_fifo_next=1'b1;
+			RD_FIFO=1'b1;
 			
 			case(ch)
 			38:
@@ -167,7 +176,7 @@ always @(*)
 			endcase
 			if(state_next==operacion)
 			begin
-			data_out_next=datoA;
+			d_out_next=datoA;
 			select_next=3'b001;			
 			end
 			end
@@ -177,13 +186,13 @@ always @(*)
 			state_next =operacion;
 			else begin
 			ch = data_in;
-			r_fifo_next=1'b1;
+			RD_FIFO=1'b1;
 			ch=ch-48;
 			if(ch>=0&&ch<=9)
 			begin
 			state_next=datoB;
 			datoB_next = ch;
-			data_out_next = op;
+			d_out_next = op;
 			select_next=3'b100;
 			end
 			else
@@ -196,7 +205,7 @@ always @(*)
 			state_next =dato_B;
 			else begin
 			ch=data_in;
-			r_fifo_next=1'b1;
+			RD_FIFO=1'b1;
 			ch=ch-48;
 			if(ch>=0&&ch<=9)
 			begin
@@ -205,7 +214,7 @@ always @(*)
 			end
 			else
 			begin
-			data_out_next=datoB;
+			d_out_next=datoB;
 			select_next=3'b010;
 			state_next=idle;
 			end

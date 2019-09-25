@@ -1,0 +1,10 @@
+Command line:
+   TestIntRx_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49181
+
+Wed Sep 25 16:47:46 2019
+
+
+ Elaboration Time: 0.28125 sec
