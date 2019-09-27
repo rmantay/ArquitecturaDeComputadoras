@@ -29,11 +29,12 @@ module TestIntTx;
 	reg RESET;
 	reg enviar;
 	reg fifo_full;
-	reg [7:0] RESULTADO;
+	reg [7:0] DATO_ALU;
 
 	// Outputs
 	reg WR_FIFO;
 	wire [7:0] data_fifo;
+	wire [2:0] state;
 
 	// Instantiate the Unit Under Test (UUT)
 	Int_Tx uut (
@@ -41,24 +42,38 @@ module TestIntTx;
 		.RESET(RESET), 
 		.enviar(enviar), 
 		.fifo_full(fifo_full), 
-		.RESULTADO(RESULTADO), 
+		.DATO_ALU(DATO_ALU), 
 		.WR_FIFO(WR_FIFO), 
-		.data_fifo(data_fifo)
+		.data_fifo(data_fifo),
+		.STATE(state)
 	);
 
 	initial begin
 		// Initialize Inputs
 		CLK = 0;
-		RESET = 0;
+		RESET = 1;
 		enviar = 0;
 		fifo_full = 0;
-		RESULTADO = 0;
-
+		DATO_ALU = 0;
+		
+		#5
+		RESET=0;
 		// Wait 100 ns for global reset to finish
 		#100;
+		
+		DATO_ALU=10;
+		enviar=1;
+		#2
+		enviar=0;
+		
+		
         
 		// Add stimulus here
 
+	end
+	
+	always begin
+	#1 CLK=~CLK;
 	end
       
 endmodule

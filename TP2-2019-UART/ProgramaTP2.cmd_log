@@ -1,0 +1,5 @@
+vhdtdtfi -lib work D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v -lang verilog -prj TP2-2019-UART -o ProgramaTP2.spl -module ProgramaTP2 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ProgramaTP2.spl D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.sym 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.syr" 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.syr" 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.syr" 

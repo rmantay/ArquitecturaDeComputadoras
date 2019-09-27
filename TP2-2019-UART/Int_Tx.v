@@ -18,11 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Int_Tx(
+module Int_Tx
+#(parameter 	NBIT = 8
+)
+(
 		input CLK, RESET, enviar, fifo_full,
-		input [7:0] DATO_ALU,
+		input [NBIT-1:0] DATO_ALU,
 		output reg WR_FIFO, 
-		output reg [7:0] data_fifo
+		output reg [NBIT-1:0] data_fifo,
+		output [2:0] STATE
     );
 	 
 localparam[1:0]
@@ -30,8 +34,10 @@ idle=2'b00,
 convertir=2'b01,
 guardar=2'b10;
 
-reg state, state_next;
-reg [7:0] valor, valor_next;
+reg [2:0] state, state_next;
+reg [NBIT-1:0] valor, valor_next;
+
+assign STATE = state;
 
 always @(posedge CLK, posedge RESET)
 begin

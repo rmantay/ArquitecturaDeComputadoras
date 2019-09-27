@@ -1,0 +1,10 @@
+[Inputs]
+CLK
+RESET
+RX
+[Outputs]
+TX
+[BiDir]
+[ATTRIBUTES]
+VeriModel ProgramaTP2
+

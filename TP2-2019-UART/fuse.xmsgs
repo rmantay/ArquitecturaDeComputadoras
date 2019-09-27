@@ -5,7 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntRx.v" Line 72: Target &lt;<arg fmt="%s" index="1">full</arg>&gt; of concurrent assignment or output port connection should be a net type.
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 46: Port <arg fmt="%s" index="1">STATE</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 62: Port <arg fmt="%s" index="1">STATE</arg> is not connected to this instance
 </msg>
 
 </messages>
