@@ -27,8 +27,7 @@ module Int_Rx
 	input [NBIT-1:0]	data_in,
 	output [NBIT-1:0]	data_out,
 	output [2:0] SEL,
-	output reg RD_FIFO,
-	
+	output reg RD_FIFO, FIN,	
 	output [2:0] STATE, 
 	output [NBIT-1:0] DATOA, DATOB, OP, CH
     );
@@ -37,7 +36,8 @@ idle= 3'b000,
 dato_A=3'b001,
 operacion=3'b010,
 dato_B= 3'b011,
-resultado = 3'b100;
+resultado = 3'b100,
+envio = 3'b101;
 localparam[NBIT-1:0]
 suma=8'b00100000,
 srl=8'b00100001,
@@ -56,6 +56,7 @@ reg [NBIT-1:0] datoB, datoB_next;
 reg [NBIT-1:0] d_out, d_out_next;
 reg [NBIT-1:0] ch;
 
+
 reg [2:0] select, select_next;
 
 
@@ -66,6 +67,7 @@ assign STATE = state;
 assign CH = ch;
 assign DATOA = datoA;
 assign DATOB = datoB;
+assign OP = op;
 
 always @(posedge CLK, posedge RESET)
 	if(RESET) begin
@@ -96,6 +98,7 @@ always @(*)
 		op_next=op;
 		datoB_next=datoB;
 		RD_FIFO = 0;
+		FIN = 0;
 		d_out_next=d_out;
 		select_next = select;
 		case(state)
@@ -110,6 +113,7 @@ always @(*)
 			begin
 			state_next=dato_A;
 			datoA_next=ch;
+			ch = 0;
 			end
 			else
 			state_next=idle;
@@ -171,6 +175,7 @@ always @(*)
 			begin
 			state_next=dato_A;
 			datoA_next =(10*datoA)+ ch ;
+			ch = 0;
 			end
 			end
 			endcase
@@ -190,8 +195,9 @@ always @(*)
 			ch=ch-48;
 			if(ch>=0&&ch<=9)
 			begin
-			state_next=datoB;
+			state_next=dato_B;
 			datoB_next = ch;
+			ch = 0;
 			d_out_next = op;
 			select_next=3'b100;
 			end
@@ -206,19 +212,39 @@ always @(*)
 			else begin
 			ch=data_in;
 			RD_FIFO=1'b1;
-			ch=ch-48;
-			if(ch>=0&&ch<=9)
-			begin
-			state_next=datoB;
-			datoB_next =(10*datoB)+ ch ;
-			end
+				if(ch==13)
+					begin
+						d_out_next=datoB;
+						select_next=3'b010;
+						state_next=resultado;
+						ch = 0;
+					end
+				else begin
+				ch=ch-48;
+					if(ch>=0&&ch<=9)
+						begin
+							state_next=dato_B;
+							datoB_next =(10*datoB)+ ch ;
+							ch = 0;
+						end
+			
 			else
 			begin
-			d_out_next=datoB;
-			select_next=3'b010;
-			state_next=idle;
+				state_next=dato_B;
+				end
 			end
 			end
+			
+			resultado:
+				begin
+						state_next=envio;
+					end
+					
+			envio:
+				begin
+					FIN=1;
+					state_next = idle;
+				end
 		endcase	
 	end
 

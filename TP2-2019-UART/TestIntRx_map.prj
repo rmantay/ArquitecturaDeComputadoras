@@ -1,0 +1,2 @@
+verilog work "netgen/map/Int_Rx_map.v"
+verilog work "TestIntRx.v"
