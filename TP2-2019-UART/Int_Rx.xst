@@ -1,5 +1,0 @@
-set -tmpdir "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/xst/projnav.tmp"
-set -xsthdpdir "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/xst"
-elaborate
--ifn Int_Rx.prj
--ifmt mixed

@@ -1,0 +1,127 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/pa.fromHdl.tcl
+# create_project -name TP2-2019-UART -dir "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/planAhead_run_2" -part xc3s100ecp132-4
+create_project: Time (s): elapsed = 00:00:20 . Memory (MB): peak = 379.977 ; gain = 43.961
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "ProgramaTP2.ucf" [current_fileset -constrset]
+Adding file 'D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {../../TP1a/XOR.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../TP1a/SUB.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../TP1a/SRL.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../TP1a/SRA.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../TP1a/OR.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../TP1a/NOR.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../TP1a/AND.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../TP1a/ADD.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../TP1a/ALU.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Tx.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Rx.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {FIFO.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BaudRateGen.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../TP1a/PROGRAMA.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {UART.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Int_Tx.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Int_Rx.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ProgramaTP2.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top ProgramaTP2 $srcset
+# add_files [list {ProgramaTP2.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s100ecp132-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/workspace/TP1a/XOR.v" into library work
+Analyzing Verilog file "D:/workspace/TP1a/SUB.v" into library work
+Analyzing Verilog file "D:/workspace/TP1a/SRL.v" into library work
+Analyzing Verilog file "D:/workspace/TP1a/SRA.v" into library work
+Analyzing Verilog file "D:/workspace/TP1a/OR.v" into library work
+Analyzing Verilog file "D:/workspace/TP1a/NOR.v" into library work
+Analyzing Verilog file "D:/workspace/TP1a/AND.v" into library work
+Analyzing Verilog file "D:/workspace/TP1a/ADD.v" into library work
+Analyzing Verilog file "D:/workspace/TP1a/ALU.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Tx.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Rx.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/FIFO.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/BaudRateGen.v" into library work
+Analyzing Verilog file "D:/workspace/TP1a/PROGRAMA.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/UART.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Int_Tx.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Int_Rx.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol = [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf:8]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol = [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf:9]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol = [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf:10]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol = [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf:11]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol = [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf:12]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol = [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf:13]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol = [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf:14]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol = [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf:15]
+Finished Parsing UCF File [D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 36ccf7a1
+open_rtl_design: Time (s): elapsed = 00:00:53 . Memory (MB): peak = 434.813 ; gain = 54.836
+update_compile_order -fileset sim_1
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Oct 17 15:10:43 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

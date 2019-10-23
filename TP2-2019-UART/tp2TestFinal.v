@@ -31,13 +31,15 @@ module tp2TestFinal;
 
 	// Outputs
 	wire TX;
+	wire [7:0] LEDS;
 
 	// Instantiate the Unit Under Test (UUT)
 	ProgramaTP2 uut (
 		.CLK(CLK), 
 		.RESET(RESET), 
 		.RX(RX), 
-		.TX(TX)
+		.TX(TX),
+		.LEDS(LEDS)
 	);
 
 	initial begin
@@ -165,7 +167,7 @@ module tp2TestFinal;
 		
 		
 		#5226
-		RX = 0;
+		RX = 0;		//2
 		#5226 
 		RX = 1;
 		#5226 
@@ -191,7 +193,7 @@ module tp2TestFinal;
 		
 		
 		#5226
-		RX = 1;
+		RX = 1;		//-
 		#5226 
 		RX = 0;
 		#5226 
@@ -220,7 +222,7 @@ module tp2TestFinal;
 		#5226
 		RX = 1;
 		#5226 
-		RX = 0;
+		RX = 0;		//1
 		#5226 
 		RX = 0;
 		#5226 
@@ -247,7 +249,7 @@ module tp2TestFinal;
 		#5226
 		RX = 1;
 		#5226 
-		RX = 0;
+		RX = 0;		//ENTER 13
 		#5226 
 		RX = 1;
 		#5226 
@@ -267,7 +269,7 @@ module tp2TestFinal;
 	end
 	
 	always begin
-	#1 CLK=~CLK;
+	#10 CLK=~CLK;
 	end
       
 endmodule

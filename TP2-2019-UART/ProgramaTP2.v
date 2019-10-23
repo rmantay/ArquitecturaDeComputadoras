@@ -22,13 +22,34 @@ module ProgramaTP2(
 		input CLK,
 		input RESET,
 		input RX,
-		output TX
+		output TX,
+		output [7:0] LEDS
     );
 	 
 	 wire rx_fifo_empty, tx_fifo_full , fin_enviar, w_fifo_uart , r_fifo_uart;
 	 wire [7:0] r_data_in, data_switch_out, w_data_fifo, led_dato_alu;
 	 wire [2:0] sel_bot;
+	 reg [7:0] leds, leds_next;
+	 reg [2:0] state_rx;
 
+	
+	assign LEDS = leds;
+	
+	always @(posedge RX)
+	begin
+		leds_next = leds + 1;
+	end
+	
+	always @(posedge CLK, posedge RESET)
+	begin
+	if(RESET) begin
+		leds <= 0;
+	end else
+	begin
+		leds <= leds_next;
+	end
+	end
+	
 UART
 #(
 			 .N_BIT(8),
@@ -67,5 +88,6 @@ Int_Tx
 	.CLK(CLK), .RESET(RESET), .DATO_ALU(led_dato_alu), .enviar(fin_enviar), .fifo_full(tx_fifo_full),
 	.data_fifo(w_data_fifo), .WR_FIFO(w_fifo_uart)
 );
+
 
 endmodule

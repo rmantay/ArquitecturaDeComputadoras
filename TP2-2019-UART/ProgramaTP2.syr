@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total CPU time to Xst completion: 0.63 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total CPU time to Xst completion: 0.64 secs
  
 --> Reading design: ProgramaTP2.prj
 
@@ -228,6 +228,7 @@ Analyzing hierarchy for module <NOR> in library <work>.
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <ProgramaTP2>.
+WARNING:Xst:863 - "ProgramaTP2.v" line 26: Name conflict (<leds> and <LEDS>, renaming leds as leds_rnm0).
 Module <ProgramaTP2> is correct for synthesis.
  
 Analyzing module <UART> in library <work>.
@@ -570,6 +571,13 @@ Unit <ALU_HANDLER> synthesized.
 
 Synthesizing Unit <ProgramaTP2>.
     Related source file is "ProgramaTP2.v".
+WARNING:Xst:1780 - Signal <state_rx> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <leds_next>.
+    Found 8-bit adder for signal <leds_next$add0000> created at line 40.
+    Found 8-bit register for signal <leds_rnm0>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
 Unit <ProgramaTP2> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -582,18 +590,18 @@ Macro Statistics
  16x8-bit dual-port RAM                                : 2
 # Multipliers                                          : 2
  8x4-bit multiplier                                    : 2
-# Adders/Subtractors                                   : 14
+# Adders/Subtractors                                   : 15
  3-bit adder                                           : 2
  4-bit adder                                           : 6
- 8-bit adder                                           : 4
+ 8-bit adder                                           : 5
  8-bit subtractor                                      : 2
 # Counters                                             : 1
  8-bit up counter                                      : 1
-# Registers                                            : 25
+# Registers                                            : 27
  1-bit register                                        : 6
  3-bit register                                        : 3
  4-bit register                                        : 6
- 8-bit register                                        : 10
+ 8-bit register                                        : 12
 # Latches                                              : 2
  8-bit latch                                           : 2
 # Comparators                                          : 8
@@ -683,15 +691,15 @@ Macro Statistics
  16x8-bit dual-port distributed RAM                    : 2
 # Multipliers                                          : 2
  8x4-bit multiplier                                    : 2
-# Adders/Subtractors                                   : 14
+# Adders/Subtractors                                   : 15
  3-bit adder                                           : 2
  4-bit adder                                           : 6
- 8-bit adder                                           : 4
+ 8-bit adder                                           : 5
  8-bit subtractor                                      : 2
 # Counters                                             : 1
  8-bit up counter                                      : 1
-# Registers                                            : 119
- Flip-Flops                                            : 119
+# Registers                                            : 135
+ Flip-Flops                                            : 135
 # Latches                                              : 2
  8-bit latch                                           : 2
 # Comparators                                          : 8
@@ -742,7 +750,15 @@ WARNING:Xst:2677 - Node <intRx/ch_rnm0_0> of sequential type is unconnected in b
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ProgramaTP2, actual ratio is 28.
+Found area constraint ratio of 100 (+ 5) on block ProgramaTP2, actual ratio is 29.
+FlipFlop leds_rnm0_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop leds_rnm0_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop leds_rnm0_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop leds_rnm0_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop leds_rnm0_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop leds_rnm0_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop leds_rnm0_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop leds_rnm0_0 has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
@@ -750,8 +766,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 132
- Flip-Flops                                            : 132
+# Registers                                            : 156
+ Flip-Flops                                            : 156
 
 =========================================================================
 
@@ -777,39 +793,41 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 4
+# IOs                              : 12
 
 Cell Usage :
-# BELS                             : 561
+# BELS                             : 572
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 7
-#      LUT2                        : 68
-#      LUT2_D                      : 5
-#      LUT3                        : 90
-#      LUT3_D                      : 10
+#      LUT2                        : 70
+#      LUT2_D                      : 4
+#      LUT3                        : 92
+#      LUT3_D                      : 11
 #      LUT3_L                      : 11
-#      LUT4                        : 191
-#      LUT4_D                      : 20
-#      LUT4_L                      : 49
+#      LUT4                        : 196
+#      LUT4_D                      : 22
+#      LUT4_L                      : 48
 #      MUXCY                       : 35
-#      MUXF5                       : 29
+#      MUXF5                       : 30
 #      VCC                         : 1
 #      XORCY                       : 40
-# FlipFlops/Latches                : 140
-#      FDC                         : 103
+# FlipFlops/Latches                : 164
+#      FD                          : 7
+#      FDC                         : 119
 #      FDCE                        : 21
 #      FDE                         : 1
 #      FDP                         : 4
 #      FDPE                        : 3
+#      FDR                         : 1
 #      LDE                         : 8
 # RAMS                             : 16
 #      RAM16X1D                    : 16
-# Clock Buffers                    : 1
-#      BUFG                        : 1
-# IO Buffers                       : 4
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 12
 #      IBUF                        : 3
-#      OBUF                        : 1
+#      OBUF                        : 9
 # MULTs                            : 2
 #      MULT18X18SIO                : 2
 =========================================================================
@@ -819,15 +837,16 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      252  out of    960    26%  
- Number of Slice Flip Flops:            140  out of   1920     7%  
- Number of 4 input LUTs:                487  out of   1920    25%  
-    Number used as logic:               455
+ Number of Slices:                      259  out of    960    26%  
+ Number of Slice Flip Flops:            156  out of   1920     8%  
+ Number of 4 input LUTs:                497  out of   1920    25%  
+    Number used as logic:               465
     Number used as RAMs:                 32
- Number of IOs:                           4
- Number of bonded IOBs:                   4  out of     83     4%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of     83    14%  
+    IOB Flip Flops:                       8
  Number of MULT18X18SIOs:                 2  out of      4    50%  
- Number of GCLKs:                         1  out of     24     4%  
+ Number of GCLKs:                         2  out of     24     8%  
 
 ---------------------------
 Partition Resource Summary:
@@ -850,7 +869,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | IBUF+BUFG              | 148   |
+CLK                                | IBUF+BUFG              | 164   |
+RX                                 | IBUF+BUFG              | 8     |
 intTx/state_rnm0_FSM_FFd1          | NONE(intTx/data_fifo_7)| 8     |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -860,7 +880,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-RESET                              | IBUF                   | 131   |
+RESET                              | IBUF                   | 147   |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -879,7 +899,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 10.671ns (frequency: 93.712MHz)
-  Total number of paths / destination ports: 12382 / 308
+  Total number of paths / destination ports: 12389 / 308
 -------------------------------------------------------------------------
 Delay:               10.671ns (Levels of Logic = 7)
   Source:            uart/fifo_rx/r_ptr_reg_0 (FF)
@@ -894,10 +914,10 @@ Delay:               10.671ns (Levels of Logic = 7)
      FDC:C->Q             14   0.591   1.000  uart/fifo_rx/r_ptr_reg_0 (uart/fifo_rx/r_ptr_reg_0)
      RAM16X1D:DPRA0->DPO   13   0.704   1.158  uart/fifo_rx/Mram_cola_circular1 (r_data_in<0>)
      LUT4:I0->O            1   0.704   0.424  intRx/op_next_or000055 (intRx/op_next_or000055)
-     LUT4:I3->O            1   0.704   0.424  intRx/op_next_or0000127_SW0 (N188)
+     LUT4:I3->O            1   0.704   0.424  intRx/op_next_or0000127_SW0 (N189)
      LUT4:I3->O            4   0.704   0.622  intRx/op_next_or0000127 (intRx/op_next_or0000)
      LUT4:I2->O            8   0.704   0.761  intRx/datoA_next<0>1 (intRx/N3)
-     LUT4:I3->O            1   0.704   0.455  intRx/datoA_next<7>_SW0_SW0_SW0 (N146)
+     LUT4:I3->O            1   0.704   0.455  intRx/datoA_next<7>_SW0_SW0_SW0 (N153)
      LUT3:I2->O            1   0.704   0.000  intRx/datoA_next<7> (intRx/datoA_next<7>)
      FDC:D                     0.308          intRx/datoa_rnm0_7
     ----------------------------------------
@@ -906,7 +926,7 @@ Delay:               10.671ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 10 / 7
+  Total number of paths / destination ports: 9 / 7
 -------------------------------------------------------------------------
 Offset:              5.278ns (Levels of Logic = 4)
   Source:            RX (PAD)
@@ -917,7 +937,7 @@ Offset:              5.278ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   1.218   0.761  RX_IBUF (RX_IBUF)
+     IBUF:I->O             8   1.218   0.761  RX_IBUF (RX_IBUF1)
      LUT4:I3->O            1   0.704   0.424  uart/uart_rx/s_next<0>11 (uart/uart_rx/N16)
      LUT4:I3->O            1   0.704   0.455  uart/uart_rx/s_next<2>10 (uart/uart_rx/s_next<2>10)
      LUT3:I2->O            1   0.704   0.000  uart/uart_rx/s_next<2>49 (uart/uart_rx/s_next<2>)
@@ -928,7 +948,7 @@ Offset:              5.278ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 9 / 9
 -------------------------------------------------------------------------
 Offset:              4.283ns (Levels of Logic = 1)
   Source:            uart/uart_tx/tx_reg (FF)
@@ -948,14 +968,14 @@ Offset:              4.283ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 36.00 secs
-Total CPU time to Xst completion: 36.73 secs
+Total REAL time to Xst completion: 38.00 secs
+Total CPU time to Xst completion: 38.32 secs
  
 --> 
 
-Total memory usage is 249208 kilobytes
+Total memory usage is 249976 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   35 (   0 filtered)
+Number of warnings :   37 (   0 filtered)
 Number of infos    :    4 (   0 filtered)
 

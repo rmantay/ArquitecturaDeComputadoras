@@ -1,5 +1,0 @@
-verilog work "Tx.v"
-verilog work "Rx.v"
-verilog work "FIFO.v"
-verilog work "BaudRateGen.v"
-verilog work "UART.v"

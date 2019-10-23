@@ -1,5 +1,0 @@
-xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Int_Rx.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Int_Rx.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 Int_Rx.ngc Int_Rx.ngd  
-map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Int_Rx_map.ncd Int_Rx.ngd Int_Rx.pcf 
-netgen -intstyle ise -s 4  -pcf Int_Rx.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim Int_Rx_map.ncd Int_Rx_map.v 
-netgen -intstyle ise -s 4  -pcf Int_Rx.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim Int_Rx_map.ncd Int_Rx_map.v 
