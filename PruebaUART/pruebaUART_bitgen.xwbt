@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\workspace\ArquitecturaDeComputadoras\PruebaUART\pruebaUART.ncd
+OUTFILE=D:\workspace\ArquitecturaDeComputadoras\PruebaUART\pruebaUART.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=D:\workspace\ArquitecturaDeComputadoras\PruebaUART
+LICENSE=WebPack
+USER_INFO=211790721_0_0_350

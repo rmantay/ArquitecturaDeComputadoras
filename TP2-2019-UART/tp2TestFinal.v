@@ -32,6 +32,7 @@ module tp2TestFinal;
 	// Outputs
 	wire TX;
 	wire [7:0] LEDS;
+	wire [7:0] state;
 
 	// Instantiate the Unit Under Test (UUT)
 	ProgramaTP2 uut (
@@ -39,7 +40,8 @@ module tp2TestFinal;
 		.RESET(RESET), 
 		.RX(RX), 
 		.TX(TX),
-		.LEDS(LEDS)
+		.LEDS(LEDS),
+		.STATE(state)
 	);
 
 	initial begin
@@ -186,7 +188,7 @@ module tp2TestFinal;
 		#5226 
 		RX = 1;
 		
-					#5226;
+					#95226;
        
 		
 		RX=0;			//bit de inicio
@@ -269,7 +271,7 @@ module tp2TestFinal;
 	end
 	
 	always begin
-	#10 CLK=~CLK;
+	#1 CLK=~CLK;
 	end
       
 endmodule

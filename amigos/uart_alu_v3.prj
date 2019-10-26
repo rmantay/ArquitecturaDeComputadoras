@@ -1,0 +1,8 @@
+verilog work "Tx.v"
+verilog work "Rx.v"
+verilog work "fifo.v"
+verilog work "Baut_Rate_Generator.v"
+verilog work "uart.v"
+verilog work "intf_v2.v"
+verilog work "bloque_ALU.v"
+verilog work "uart_alu_v3.v"

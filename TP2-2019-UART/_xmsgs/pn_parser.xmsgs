@@ -8,32 +8,5 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestBaudRate.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestFIFO.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntRx.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntRxSola.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntTx.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestRX.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestTx.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestUART.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal.v&quot; into library work</arg>
-</msg>
-
 </messages>
 

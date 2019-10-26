@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.63 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.64 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: ProgramaTP2.prj
 
@@ -228,6 +228,7 @@ Analyzing hierarchy for module <NOR> in library <work>.
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <ProgramaTP2>.
+WARNING:Xst:863 - "ProgramaTP2.v" line 27: Name conflict (<state> and <STATE>, renaming state as state_rnm0).
 WARNING:Xst:863 - "ProgramaTP2.v" line 26: Name conflict (<leds> and <LEDS>, renaming leds as leds_rnm0).
 Module <ProgramaTP2> is correct for synthesis.
  
@@ -571,13 +572,14 @@ Unit <ALU_HANDLER> synthesized.
 
 Synthesizing Unit <ProgramaTP2>.
     Related source file is "ProgramaTP2.v".
-WARNING:Xst:1780 - Signal <state_rx> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 8-bit register for signal <leds_next>.
-    Found 8-bit adder for signal <leds_next$add0000> created at line 40.
+    Found 8-bit adder for signal <leds_next$add0000> created at line 50.
     Found 8-bit register for signal <leds_rnm0>.
+    Found 32-bit shifter logical left for signal <STATE$shift0000> created at line 46.
     Summary:
 	inferred  16 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
+	inferred   1 Combinational logic shifter(s).
 Unit <ProgramaTP2> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -609,7 +611,8 @@ Macro Statistics
  8-bit comparator lessequal                            : 4
 # Multiplexers                                         : 4
  1-bit 4-to-1 multiplexer                              : 4
-# Logic shifters                                       : 2
+# Logic shifters                                       : 3
+ 32-bit shifter logical left                           : 1
  8-bit shifter arithmetic right                        : 1
  8-bit shifter logical right                           : 1
 # Xors                                                 : 1
@@ -707,7 +710,8 @@ Macro Statistics
  8-bit comparator lessequal                            : 4
 # Multiplexers                                         : 4
  1-bit 4-to-1 multiplexer                              : 4
-# Logic shifters                                       : 2
+# Logic shifters                                       : 3
+ 32-bit shifter logical left                           : 1
  8-bit shifter arithmetic right                        : 1
  8-bit shifter logical right                           : 1
 # Xors                                                 : 1
@@ -750,7 +754,7 @@ WARNING:Xst:2677 - Node <intRx/ch_rnm0_0> of sequential type is unconnected in b
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ProgramaTP2, actual ratio is 29.
+Found area constraint ratio of 100 (+ 5) on block ProgramaTP2, actual ratio is 30.
 FlipFlop leds_rnm0_7 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop leds_rnm0_6 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop leds_rnm0_5 has been replicated 1 time(s) to handle iob=true attribute.
@@ -793,23 +797,23 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 12
+# IOs                              : 20
 
 Cell Usage :
-# BELS                             : 572
+# BELS                             : 579
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 7
-#      LUT2                        : 70
+#      LUT2                        : 73
 #      LUT2_D                      : 4
-#      LUT3                        : 92
-#      LUT3_D                      : 11
-#      LUT3_L                      : 11
+#      LUT3                        : 95
+#      LUT3_D                      : 12
+#      LUT3_L                      : 10
 #      LUT4                        : 196
 #      LUT4_D                      : 22
-#      LUT4_L                      : 48
+#      LUT4_L                      : 50
 #      MUXCY                       : 35
-#      MUXF5                       : 30
+#      MUXF5                       : 29
 #      VCC                         : 1
 #      XORCY                       : 40
 # FlipFlops/Latches                : 164
@@ -825,9 +829,9 @@ Cell Usage :
 #      RAM16X1D                    : 16
 # Clock Buffers                    : 2
 #      BUFG                        : 2
-# IO Buffers                       : 12
+# IO Buffers                       : 20
 #      IBUF                        : 3
-#      OBUF                        : 9
+#      OBUF                        : 17
 # MULTs                            : 2
 #      MULT18X18SIO                : 2
 =========================================================================
@@ -837,13 +841,13 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      259  out of    960    26%  
+ Number of Slices:                      264  out of    960    27%  
  Number of Slice Flip Flops:            156  out of   1920     8%  
- Number of 4 input LUTs:                497  out of   1920    25%  
-    Number used as logic:               465
+ Number of 4 input LUTs:                505  out of   1920    26%  
+    Number used as logic:               473
     Number used as RAMs:                 32
- Number of IOs:                          12
- Number of bonded IOBs:                  12  out of     83    14%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of     83    24%  
     IOB Flip Flops:                       8
  Number of MULT18X18SIOs:                 2  out of      4    50%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -889,7 +893,7 @@ Speed Grade: -4
 
    Minimum period: 10.671ns (Maximum Frequency: 93.712MHz)
    Minimum input arrival time before clock: 5.278ns
-   Maximum output required time after clock: 4.283ns
+   Maximum output required time after clock: 6.425ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -899,7 +903,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 10.671ns (frequency: 93.712MHz)
-  Total number of paths / destination ports: 12389 / 308
+  Total number of paths / destination ports: 12383 / 308
 -------------------------------------------------------------------------
 Delay:               10.671ns (Levels of Logic = 7)
   Source:            uart/fifo_rx/r_ptr_reg_0 (FF)
@@ -948,32 +952,33 @@ Offset:              5.278ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 9 / 9
+  Total number of paths / destination ports: 25 / 15
 -------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            uart/uart_tx/tx_reg (FF)
-  Destination:       TX (PAD)
+Offset:              6.425ns (Levels of Logic = 2)
+  Source:            intRx/state_rnm0_FSM_FFd3 (FF)
+  Destination:       STATE<5> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: uart/uart_tx/tx_reg to TX
+  Data Path: intRx/state_rnm0_FSM_FFd3 to STATE<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              1   0.591   0.420  uart/uart_tx/tx_reg (uart/uart_tx/tx_reg)
-     OBUF:I->O                 3.272          TX_OBUF (TX)
+     FDC:C->Q             36   0.591   1.438  intRx/state_rnm0_FSM_FFd3 (intRx/state_rnm0_FSM_FFd3)
+     LUT2:I0->O            1   0.704   0.420  STATE_not0000<5>1 (STATE_5_OBUF)
+     OBUF:I->O                 3.272          STATE_5_OBUF (STATE<5>)
     ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
+    Total                      6.425ns (4.567ns logic, 1.858ns route)
+                                       (71.1% logic, 28.9% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 38.00 secs
-Total CPU time to Xst completion: 38.32 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.28 secs
  
 --> 
 
-Total memory usage is 249976 kilobytes
+Total memory usage is 218104 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   37 (   0 filtered)

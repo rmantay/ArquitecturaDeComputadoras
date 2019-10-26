@@ -2,9 +2,9 @@ Command line:
    tp2TestFinal_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  62995
+     -socket  49167
 
-Mon Oct 21 15:06:28 2019
+Fri Oct 25 17:16:03 2019
 
 
- Elaboration Time: 0.40625 sec
+ Elaboration Time: 0.109375 sec

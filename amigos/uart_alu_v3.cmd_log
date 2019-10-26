@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/amigos/uart_alu_v3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/amigos/uart_alu_v3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_alu_v3_ucf_basys_2.ucf -p xc3s100e-cp132-4 uart_alu_v3.ngc uart_alu_v3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o uart_alu_v3_map.ncd uart_alu_v3.ngd uart_alu_v3.pcf 
+par -w -intstyle ise -ol high -t 1 uart_alu_v3_map.ncd uart_alu_v3.ncd uart_alu_v3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml uart_alu_v3.twx uart_alu_v3.ncd -o uart_alu_v3.twr uart_alu_v3.pcf -ucf uart_alu_v3_ucf_basys_2.ucf 
+bitgen -intstyle ise -f uart_alu_v3.ut uart_alu_v3.ncd 
+bitgen -intstyle ise -f uart_alu_v3.ut uart_alu_v3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/amigos/uart_alu_v3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/amigos/uart_alu_v3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_alu_v3_ucf_basys_2.ucf -p xc3s100e-cp132-4 uart_alu_v3.ngc uart_alu_v3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o uart_alu_v3_map.ncd uart_alu_v3.ngd uart_alu_v3.pcf 
+par -w -intstyle ise -ol high -t 1 uart_alu_v3_map.ncd uart_alu_v3.ncd uart_alu_v3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml uart_alu_v3.twx uart_alu_v3.ncd -o uart_alu_v3.twr uart_alu_v3.pcf -ucf uart_alu_v3_ucf_basys_2.ucf 
+bitgen -intstyle ise -f uart_alu_v3.ut uart_alu_v3.ncd 

@@ -8,16 +8,47 @@ This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
-# run 1000 ns
+# run 100000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 1.00ms
+# run 100.00us
 ISim P.20131013 (signature 0x8ef4fb42)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-# run 1000 ns
+# run 100000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 1.00ms
+# run 100.00us
+# step
+Stopped at time : 200001 ns : File "//vboxsrv/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal.v" Line 274
+# step
+Stopped at time : 200001 ns : File "//vboxsrv/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal.v" Line 273
+# step
+Stopped at time : 200001 ns : File "//vboxsrv/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal.v" Line 274
+# step
+Stopped at time : 200001 ns : File "//vboxsrv/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 53
+# step
+Stopped at time : 200001 ns : File "//vboxsrv/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 54
+# step
+Stopped at time : 200001 ns : File "//vboxsrv/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 57
+# step
+Stopped at time : 200001 ns : File "//vboxsrv/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 58
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 100000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 100000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100.00us

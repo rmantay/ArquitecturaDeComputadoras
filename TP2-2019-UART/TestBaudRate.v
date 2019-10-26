@@ -53,7 +53,7 @@ module TestBaudRate;
 	end
 	
 	always @(*) begin
-	#1
+	#10
 	CLK <= ~CLK;
 	end
 

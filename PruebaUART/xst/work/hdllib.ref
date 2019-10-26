@@ -1,0 +1,6 @@
+MO FIFO NULL ../TP2-2019-UART/FIFO.v vlg7C/_f_i_f_o.bin 1571700231
+MO UART NULL ../TP2-2019-UART/UART.v vlg48/_u_a_r_t.bin 1571700231
+MO pruebaUART NULL pruebaUART.v vlg63/prueba_u_a_r_t.bin 1571700231
+MO BaudRateGen NULL ../TP2-2019-UART/BaudRateGen.v vlg32/_baud_rate_gen.bin 1571700231
+MO Rx NULL ../TP2-2019-UART/Rx.v vlg12/_rx.bin 1571700231
+MO Tx NULL ../TP2-2019-UART/Tx.v vlg1C/_tx.bin 1571700231

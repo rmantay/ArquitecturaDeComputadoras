@@ -23,17 +23,27 @@ module ProgramaTP2(
 		input RESET,
 		input RX,
 		output TX,
-		output [7:0] LEDS
+		output [7:0] LEDS,
+		output [7:0] STATE
     );
 	 
 	 wire rx_fifo_empty, tx_fifo_full , fin_enviar, w_fifo_uart , r_fifo_uart;
 	 wire [7:0] r_data_in, data_switch_out, w_data_fifo, led_dato_alu;
 	 wire [2:0] sel_bot;
-	 reg [7:0] leds, leds_next;
+	 reg [7:0] leds=0;
+	 reg [7:0] leds_next= 0;
 	 reg [2:0] state_rx;
+	 wire [2:0] state;
+	 
+	 always @(state)
+	 begin
+		state_rx = state;
+		end
 
 	
 	assign LEDS = leds;
+	
+	assign STATE = ~(2**(state_rx));
 	
 	always @(posedge RX)
 	begin
@@ -71,7 +81,7 @@ Int_Rx
 intRx
 (
 	.CLK(CLK), .RESET(RESET), .FIFO_empty(rx_fifo_empty) , .data_in(r_data_in),
-	.SEL(sel_bot), .data_out(data_switch_out), .RD_FIFO(r_fifo_uart), .FIN(fin_enviar)
+	.SEL(sel_bot), .data_out(data_switch_out), .RD_FIFO(r_fifo_uart), .FIN(fin_enviar), .STATE(state)
 );
 
 ALU_HANDLER alu

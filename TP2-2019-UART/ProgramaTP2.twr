@@ -45,7 +45,7 @@ Setup/Hold to clock CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-RESET       |    2.415(R)|   -0.530(R)|CLK_IBUF          |   0.000|
+RESET       |    3.872(R)|   -1.695(R)|CLK_IBUF          |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -61,7 +61,13 @@ LEDS<4>     |    6.053(R)|CLK_IBUF          |   0.000|
 LEDS<5>     |    6.038(R)|CLK_IBUF          |   0.000|
 LEDS<6>     |    6.051(R)|CLK_IBUF          |   0.000|
 LEDS<7>     |    6.023(R)|CLK_IBUF          |   0.000|
-TX          |    7.942(R)|CLK_IBUF          |   0.000|
+STATE<0>    |   10.354(R)|CLK_IBUF          |   0.000|
+STATE<1>    |    9.721(R)|CLK_IBUF          |   0.000|
+STATE<2>    |   10.302(R)|CLK_IBUF          |   0.000|
+STATE<3>    |   10.524(R)|CLK_IBUF          |   0.000|
+STATE<4>    |   10.377(R)|CLK_IBUF          |   0.000|
+STATE<5>    |   10.229(R)|CLK_IBUF          |   0.000|
+TX          |    8.655(R)|CLK_IBUF          |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -69,8 +75,8 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    9.442|    1.908|         |         |
-RX             |    2.758|    2.333|         |         |
+CLK            |    9.414|    1.525|         |         |
+RX             |    2.806|    2.668|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock RX
@@ -78,11 +84,11 @@ Clock to Setup on destination clock RX
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.172|         |         |         |
+CLK            |    4.951|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Oct 23 15:45:14 2019 
+Analysis completed Fri Oct 25 17:20:48 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:

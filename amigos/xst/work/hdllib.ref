@@ -1,0 +1,8 @@
+MO intf_v2 NULL intf_v2.v vlg40/intf__v2.bin 1571702935
+MO bloque_ALU NULL bloque_ALU.v vlg6D/bloque___a_l_u.bin 1571702936
+MO Baut_Rate_Generator NULL Baut_Rate_Generator.v vlg7D/_baut___rate___generator.bin 1571702935
+MO Rx NULL Rx.v vlg12/_rx.bin 1571702935
+MO Tx NULL Tx.v vlg1C/_tx.bin 1571702935
+MO fifo NULL fifo.v vlg7C/fifo.bin 1571702935
+MO uart NULL uart.v vlg48/uart.bin 1571702935
+MO uart_alu_v3 NULL uart_alu_v3.v vlg29/uart__alu__v3.bin 1571702936
