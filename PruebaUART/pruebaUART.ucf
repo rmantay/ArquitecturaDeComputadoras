@@ -2,8 +2,8 @@
 
 NET "CLK" LOC = B8;
 NET "RESET" LOC = G12;
-NET "RX" LOC = B7;
-NET "TX" LOC = C5;
+NET "RX" LOC = B5;
+NET "TX" LOC = J3;
 
 NET "LEDS[0]" LOC = M5;
 NET "LEDS[1]" LOC = M11;

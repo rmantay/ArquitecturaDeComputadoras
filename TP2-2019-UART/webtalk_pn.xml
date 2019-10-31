@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Fri Oct 25 17:20:19 2019">
+<application name="pn" timeStamp="Thu Oct 31 20:02:52 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="820C68E02953499BB9035E4DE9D49EA6" type="project"/>
-<property name="ProjectIteration" value="16" type="project"/>
-<property name="ProjectFile" value="D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TP2-2019-UART.xise" type="project"/>
+<property name="ProjectIteration" value="27" type="project"/>
+<property name="ProjectFile" value="C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TP2-2019-UART.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2019-09-14T06:17:14" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -26,7 +26,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2019-09-14T06:17:14" type="design"/>
 <property name="PROP_intWbtProjectID" value="820C68E02953499BB9035E4DE9D49EA6" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="16" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="27" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
@@ -39,7 +39,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevFamily" value="Spartan3E" type="design"/>
 <property name="PROP_DevDevice" value="xc3s100e" type="design"/>
 <property name="PROP_DevFamilyPMName" value="spartan3e" type="design"/>
-<property name="PROP_ISimSimulationRunTime_behav_tb" value="100000 ns" type="process"/>
+<property name="PROP_ISimSimulationRunTime_behav_tb" value="1000000 ns" type="process"/>
 <property name="PROP_DevPackage" value="cp132" type="design"/>
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-4" type="design"/>

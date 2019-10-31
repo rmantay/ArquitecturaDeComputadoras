@@ -1,0 +1,36 @@
+
+
+NET "DOUT[7]" LOC = G1;
+NET "DOUT[6]" LOC = P4;
+NET "DOUT[5]" LOC = N4;
+NET "DOUT[4]" LOC = N5;
+NET "DOUT[3]" LOC = P6;
+NET "DOUT[2]" LOC = P7;
+NET "DOUT[1]" LOC = M11;
+NET "DOUT[0]" LOC = M5;
+
+NET "SWITCH[7]" LOC = N3;
+NET "SWITCH[6]" LOC = E2;
+NET "SWITCH[5]" LOC = F3;
+NET "SWITCH[4]" LOC = G3;
+NET "SWITCH[3]" LOC = B4;
+NET "SWITCH[2]" LOC = K3;
+NET "SWITCH[1]" LOC = L3;
+NET "SWITCH[0]" LOC = P11;
+NET "BOTON_START" LOC = A7;
+
+NET "CLK" LOC = B8;
+NET "RESET" LOC = G12;
+NET "rx" LOC = B7;
+NET "tx" LOC = C5;
+
+# PlanAhead Generated physical constraints 
+
+NET "SEG[7]" LOC = N13;
+NET "SEG[5]" LOC = L13;
+NET "SEG[4]" LOC = P12;
+NET "SEG[3]" LOC = N11;
+NET "SEG[2]" LOC = N14;
+NET "SEG[1]" LOC = H12;
+NET "SEG[0]" LOC = L14;
+NET "SEG[6]" LOC = M12;

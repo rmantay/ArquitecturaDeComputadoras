@@ -45,7 +45,8 @@ Setup/Hold to clock CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-RESET       |    3.872(R)|   -1.695(R)|CLK_IBUF          |   0.000|
+RESET       |    1.545(R)|    0.171(R)|CLK_BUFGP         |   0.000|
+RX          |    2.997(R)|    0.368(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -53,21 +54,21 @@ Clock CLK to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-LEDS<0>     |    6.053(R)|CLK_IBUF          |   0.000|
-LEDS<1>     |    6.035(R)|CLK_IBUF          |   0.000|
-LEDS<2>     |    6.051(R)|CLK_IBUF          |   0.000|
-LEDS<3>     |    6.051(R)|CLK_IBUF          |   0.000|
-LEDS<4>     |    6.053(R)|CLK_IBUF          |   0.000|
-LEDS<5>     |    6.038(R)|CLK_IBUF          |   0.000|
-LEDS<6>     |    6.051(R)|CLK_IBUF          |   0.000|
-LEDS<7>     |    6.023(R)|CLK_IBUF          |   0.000|
-STATE<0>    |   10.354(R)|CLK_IBUF          |   0.000|
-STATE<1>    |    9.721(R)|CLK_IBUF          |   0.000|
-STATE<2>    |   10.302(R)|CLK_IBUF          |   0.000|
-STATE<3>    |   10.524(R)|CLK_IBUF          |   0.000|
-STATE<4>    |   10.377(R)|CLK_IBUF          |   0.000|
-STATE<5>    |   10.229(R)|CLK_IBUF          |   0.000|
-TX          |    8.655(R)|CLK_IBUF          |   0.000|
+LEDS<0>     |   10.856(R)|CLK_BUFGP         |   0.000|
+LEDS<1>     |    9.985(R)|CLK_BUFGP         |   0.000|
+LEDS<2>     |   11.137(R)|CLK_BUFGP         |   0.000|
+LEDS<3>     |   10.614(R)|CLK_BUFGP         |   0.000|
+LEDS<4>     |   10.376(R)|CLK_BUFGP         |   0.000|
+LEDS<5>     |   11.574(R)|CLK_BUFGP         |   0.000|
+STATE<0>    |    7.834(R)|CLK_BUFGP         |   0.000|
+STATE<1>    |    8.390(R)|CLK_BUFGP         |   0.000|
+STATE<2>    |    8.914(R)|CLK_BUFGP         |   0.000|
+STATE<3>    |    8.491(R)|CLK_BUFGP         |   0.000|
+STATE<4>    |    8.392(R)|CLK_BUFGP         |   0.000|
+STATE<5>    |    7.778(R)|CLK_BUFGP         |   0.000|
+STATE<6>    |    8.098(R)|CLK_BUFGP         |   0.000|
+STATE<7>    |    8.788(R)|CLK_BUFGP         |   0.000|
+TX          |    7.846(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -75,27 +76,18 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    9.414|    1.525|         |         |
-RX             |    2.806|    2.668|         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock RX
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |    4.951|         |         |         |
+CLK            |    9.717|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Oct 25 17:20:48 2019 
+Analysis completed Thu Oct 31 20:03:06 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 124 MB
+Peak Memory Usage: 157 MB
 
 
 

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Oct 25 17:20:16 2019
+// Written by: Map P.20131013 on Thu Oct 31 20:02:50 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -23,5 +23,6 @@ COMP "LEDS<4>" LOCATE = SITE "N5" LEVEL 1;
 COMP "LEDS<5>" LOCATE = SITE "N4" LEVEL 1;
 COMP "LEDS<6>" LOCATE = SITE "P4" LEVEL 1;
 COMP "LEDS<7>" LOCATE = SITE "G1" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 

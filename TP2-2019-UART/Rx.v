@@ -73,7 +73,7 @@ module Rx
 			
 			start:
 				if(TICK) 
-					if(s==N_BIT-1) begin		//7
+					if(s==7) begin		//7
 						state_next = data;
 						s_next = 0;
 						n_next = 0;
@@ -84,10 +84,11 @@ module Rx
 			
 			data:
 				if(TICK)
-					if(s==N_TICK-1) begin		//15
+				begin
+					if(s==15) begin		//15
 						s_next = 0;
-						b_next = {RX , b[N_BIT-1:1]};		//7
-						if(n==N_BIT-1) begin
+						b_next = {RX , b[7:1]};		//7
+						if(n==7) begin
 							state_next = stop;
 						end
 						else begin
@@ -97,10 +98,11 @@ module Rx
 					else begin
 						s_next = s+1;
 					end
+				end
 		
 			stop:
 				if(TICK)
-					if(s==N_TICK-1) 		//15
+					if(s==15) 		//15
 					begin
 						state_next = idle;
 						RX_DONE = 1'b1;

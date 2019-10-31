@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Oct 21 16:33:25 2019
+// Written by: Map P.20131013 on Wed Oct 30 15:18:22 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -11,8 +11,8 @@ COMP "LEDS<4>" LOCATE = SITE "N5" LEVEL 1;
 COMP "LEDS<5>" LOCATE = SITE "N4" LEVEL 1;
 COMP "LEDS<6>" LOCATE = SITE "P4" LEVEL 1;
 COMP "LEDS<7>" LOCATE = SITE "G1" LEVEL 1;
-COMP "RX" LOCATE = SITE "B7" LEVEL 1;
-COMP "TX" LOCATE = SITE "C5" LEVEL 1;
+COMP "RX" LOCATE = SITE "B5" LEVEL 1;
+COMP "TX" LOCATE = SITE "J3" LEVEL 1;
 COMP "CLK" LOCATE = SITE "B8" LEVEL 1;
 COMP "RESET" LOCATE = SITE "G12" LEVEL 1;
 SCHEMATIC END;

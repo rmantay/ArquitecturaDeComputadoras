@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Wed Oct 30 15:57:50 2019
+# Process ID: 2972
+# Log file: D:/workspace/ArquitecturaDeComputadoras/UartSinFifo/planAhead_run_2/planAhead.log
+# Journal file: D:/workspace/ArquitecturaDeComputadoras/UartSinFifo/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/workspace/ArquitecturaDeComputadoras/UartSinFifo/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin G1 [get_ports {DOUT[7]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {DOUT[6]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {DOUT[5]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {DOUT[4]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {DOUT[2]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {DOUT[2]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {DOUT[3]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {DOUT[1]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {DOUT[0]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {SWITCH[7]}]
+endgroup
+startgroup
+set_property package_pin E2 [get_ports {SWITCH[7]}]
+endgroup
+startgroup
+set_property package_pin F3 [get_ports {SWITCH[6]}]
+endgroup
+startgroup
+set_property package_pin G3 [get_ports {SWITCH[5]}]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports {SWITCH[4]}]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports {SWITCH[3]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {SWITCH[2]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {SWITCH[1]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {SWITCH[7]}]
+endgroup
+startgroup
+set_property package_pin E2 [get_ports {SWITCH[6]}]
+endgroup
+startgroup
+set_property package_pin F3 [get_ports {SWITCH[5]}]
+endgroup
+startgroup
+set_property package_pin G3 [get_ports {SWITCH[4]}]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports {SWITCH[3]}]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports {SWITCH[2]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {SWITCH[1]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {SWITCH[0]}]
+endgroup
+startgroup
+set_property package_pin A7 [get_ports BOTON_START]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports RESET]
+endgroup
+startgroup
+set_property package_pin B7 [get_ports rx]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports tx]
+endgroup
+save_constraints

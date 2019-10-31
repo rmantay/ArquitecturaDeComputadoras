@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-IEWIN7::  Mon Oct 21 16:33:32 2019
+IEWIN7::  Wed Oct 30 15:18:27 2019
 
 par -w -intstyle ise -ol high -t 1 pruebaUART_map.ncd pruebaUART.ncd
 pruebaUART.pcf 
@@ -43,7 +43,7 @@ Design Summary Report:
 
 
    Number of BUFGMUXs                        1 out of 24      4%
-   Number of Slices                        107 out of 960    11%
+   Number of Slices                        114 out of 960    11%
       Number of SLICEMs                     16 out of 480     3%
 
 
@@ -53,49 +53,49 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 5 secs 
-Finished initial Timing Analysis.  REAL time: 5 secs 
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
 
 
 Starting Placer
-Total REAL time at the beginning of Placer: 5 secs 
-Total CPU  time at the beginning of Placer: 4 secs 
+Total REAL time at the beginning of Placer: 3 secs 
+Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:eddba14) REAL time: 6 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:1fc66c92) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:eddba14) REAL time: 6 secs 
+Phase 2.7  Design Feasibility Check (Checksum:1fc66c92) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:eddba14) REAL time: 6 secs 
+Phase 3.31  Local Placement Optimization (Checksum:1fc66c92) REAL time: 3 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:101ee1f4) REAL time: 6 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:223d440a) REAL time: 3 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:101ee1f4) REAL time: 6 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:223d440a) REAL time: 3 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:101ee1f4) REAL time: 6 secs 
+Phase 6.36  Local Placement Optimization (Checksum:223d440a) REAL time: 3 secs 
 
 Phase 7.8  Global Placement
-.....
 ...
-Phase 7.8  Global Placement (Checksum:fe0b5bdf) REAL time: 13 secs 
+....
+Phase 7.8  Global Placement (Checksum:f47452ce) REAL time: 8 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:fe0b5bdf) REAL time: 13 secs 
+Phase 8.5  Local Placement Optimization (Checksum:f47452ce) REAL time: 8 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:4c4ebee) REAL time: 16 secs 
+Phase 9.18  Placement Optimization (Checksum:d644f448) REAL time: 9 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:4c4ebee) REAL time: 16 secs 
+Phase 10.5  Local Placement Optimization (Checksum:d644f448) REAL time: 9 secs 
 
-Total REAL time to Placer completion: 16 secs 
-Total CPU  time to Placer completion: 13 secs 
+Total REAL time to Placer completion: 9 secs 
+Total CPU  time to Placer completion: 9 secs 
 Writing design to file pruebaUART.ncd
 
 
@@ -103,36 +103,36 @@ Writing design to file pruebaUART.ncd
 Starting Router
 
 
-Phase  1  : 882 unrouted;      REAL time: 19 secs 
+Phase  1  : 912 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 804 unrouted;      REAL time: 19 secs 
+Phase  2  : 828 unrouted;      REAL time: 11 secs 
 
-Phase  3  : 198 unrouted;      REAL time: 20 secs 
+Phase  3  : 173 unrouted;      REAL time: 12 secs 
 
-Phase  4  : 216 unrouted; (Par is working to improve performance)     REAL time: 20 secs 
+Phase  4  : 185 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 20 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
 Updating file: pruebaUART.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 27 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 
-Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 27 secs 
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
 WARNING:Route:455 - CLK Net:uart/fifo_rx/empty_reg may have excessive skew because 
-      1 CLK pins and 23 NON_CLK pins failed to route using a CLK template.
+      1 CLK pins and 11 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 27 secs 
-Total CPU time to Router completion: 24 secs 
+Total REAL time to Router completion: 16 secs 
+Total CPU time to Router completion: 15 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -150,10 +150,10 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            CLK_IBUF | BUFGMUX_X2Y11| No   |   70 |  0.013     |  0.064      |
+|            CLK_IBUF | BUFGMUX_X2Y11| No   |   72 |  0.027     |  0.064      |
 +---------------------+--------------+------+------+------------+-------------+
 |uart/fifo_rx/empty_r |              |      |      |            |             |
-|                  eg |         Local|      |   31 |  0.608     |  2.685      |
+|                  eg |         Local|      |   23 |  0.854     |  2.718      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -173,8 +173,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     5.566ns|     N/A|           0
-  _IBUF                                     | HOLD        |     0.751ns|            |       0|           0
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     5.273ns|     N/A|           0
+  _IBUF                                     | HOLD        |     0.767ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -190,8 +190,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 32 secs 
-Total CPU time to PAR completion: 25 secs 
+Total REAL time to PAR completion: 18 secs 
+Total CPU time to PAR completion: 16 secs 
 
 Peak Memory Usage:  245 MB
 

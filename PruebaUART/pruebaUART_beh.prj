@@ -1,0 +1,7 @@
+verilog work "../TP2-2019-UART/Tx.v"
+verilog work "../TP2-2019-UART/Rx.v"
+verilog work "../TP2-2019-UART/FIFO.v"
+verilog work "../TP2-2019-UART/BaudRateGen.v"
+verilog work "../TP2-2019-UART/UART.v"
+verilog work "pruebaUART.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

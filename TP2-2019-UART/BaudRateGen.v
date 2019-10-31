@@ -37,7 +37,7 @@ module BaudRateGen
 	 begin
 		if(RESET)
 			contador <= 0;
-		else if(CLK)
+		else 
 			begin
 				if(contador==163) begin
 					ti <= 1;

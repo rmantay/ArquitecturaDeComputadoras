@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Wed Oct 30 16:34:12 2019
+# Process ID: 3972
+# Log file: D:/workspace/ArquitecturaDeComputadoras/UartSinFifo/planAhead_run_3/planAhead.log
+# Journal file: D:/workspace/ArquitecturaDeComputadoras/UartSinFifo/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/workspace/ArquitecturaDeComputadoras/UartSinFifo/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin L14 [get_ports {SEG[7]}]
+endgroup
+set_property package_pin "" [get_ports [list  {SEG[6]}]]
+startgroup
+set_property package_pin N13 [get_ports {SEG[7]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {SEG[6]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {SEG[5]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {SEG[4]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {SEG[3]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {SEG[2]}]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports {SEG[1]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {SEG[0]}]
+endgroup
+startgroup
+set_property package_pin M12 [get_ports {SEG[6]}]
+endgroup
+save_constraints

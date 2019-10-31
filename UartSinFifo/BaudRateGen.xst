@@ -1,0 +1,5 @@
+set -tmpdir "D:/workspace/ArquitecturaDeComputadoras/UartSinFifo/xst/projnav.tmp"
+set -xsthdpdir "D:/workspace/ArquitecturaDeComputadoras/UartSinFifo/xst"
+elaborate
+-ifn BaudRateGen.prj
+-ifmt mixed

@@ -6,7 +6,8 @@ ise -dd _ngo -nt timestamp -uc ProgramaTP2.ucf -p xc3s100e-cp132-4
 ProgramaTP2.ngc ProgramaTP2.ngd
 
 Reading NGO file
-"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ngc" ...
+"C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-U
+ART/ProgramaTP2.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -28,10 +29,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 117220 kilobytes
+Total memory usage is 152268 kilobytes
 
 Writing NGD file "ProgramaTP2.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   5 sec
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "ProgramaTP2.bld"...

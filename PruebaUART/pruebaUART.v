@@ -38,6 +38,12 @@ module pruebaUART(
 	wire [7:0] rw_data;
 	wire rx_empty;
 	reg [7:0] leds;
+	
+	reg [7:0] palabra = 53;
+	
+	
+	wire WR_UART;
+	reg flag;
 	 
 	 
 UART
@@ -50,16 +56,38 @@ UART
 )
 uart
 (
-	.CLK(CLK), .RESET(RESET), .rd_uart(~rx_empty), .wr_uart(~rx_empty), .w_data(rw_data), .rx(RX),
+	.CLK(CLK), .RESET(RESET), .rd_uart(~rx_empty), .wr_uart(WR_UART), .w_data(palabra), .rx(RX),
 	.rx_empty(rx_empty), .tx_full(), .r_data(rw_data) , .tx(TX)
 );
+
+assign WR_UART = ~rx_empty;
 
 	 
 always @(negedge rx_empty)
 begin
 	leds=rw_data;
-end
+	palabra = rw_data;
+	end
 
 assign LEDS = leds;
+
+//always @(posedge CLK, posedge RESET)
+//begin
+//	if(RESET)
+//	begin
+//		flag =1;
+//	end
+//	else
+//	begin
+//		if(flag)
+//		begin
+//			flag = 0;
+//			WR_UART=1;
+//		end
+//		else
+//			WR_UART=0;
+//			
+//	end
+//	end
 
 endmodule

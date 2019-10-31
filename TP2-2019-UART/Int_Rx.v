@@ -24,12 +24,12 @@ module Int_Rx
 
 (	input CLK, RESET,
 	input FIFO_empty,
-	input [NBIT-1:0]	data_in,
-	output [NBIT-1:0]	data_out,
+	input [7:0]	data_in,
+	output [7:0]	data_out,
 	output [2:0] SEL,
 	output reg RD_FIFO, FIN,	
 	output [2:0] STATE, 
-	output [NBIT-1:0] DATOA, DATOB, OP, CH
+	output [7:0] DATOA, DATOB, OP, CH
     );
 localparam [2:0]
 idle= 3'b000,
@@ -38,7 +38,7 @@ operacion=3'b010,
 dato_B= 3'b011,
 resultado = 3'b100,
 envio = 3'b101;
-localparam[NBIT-1:0]
+localparam[7:0]
 suma=8'b00100000,
 srl=8'b00100001,
 resta=8'b00100010,
@@ -50,11 +50,11 @@ nor4=8'b00100111;
 
 
 reg [2:0] state, state_next;
-reg [NBIT-1:0] datoA, datoA_next;
-reg [NBIT-1:0] op, op_next;
-reg [NBIT-1:0] datoB, datoB_next;
-reg [NBIT-1:0] d_out, d_out_next;
-reg [NBIT-1:0] ch;
+reg [7:0] datoA, datoA_next;
+reg [7:0] op, op_next;
+reg [7:0] datoB, datoB_next;
+reg [7:0] d_out, d_out_next;
+reg [7:0] ch;
 
 
 reg [2:0] select, select_next;
@@ -212,7 +212,7 @@ always @(*)
 			else begin
 			ch=data_in;
 			RD_FIFO=1'b1;
-				if(ch==13)
+				if(ch==61)
 					begin
 						d_out_next=datoB;
 						select_next=3'b010;

@@ -23,9 +23,9 @@ module Int_Tx
 )
 (
 		input CLK, RESET, enviar, fifo_full,
-		input [NBIT-1:0] DATO_ALU,
+		input [7:0] DATO_ALU,
 		output reg WR_FIFO, 
-		output reg [NBIT-1:0] data_fifo,
+		output reg [7:0] data_fifo,
 		output [2:0] STATE
     );
 	 
@@ -35,7 +35,7 @@ convertir=2'b01,
 guardar=2'b10;
 
 reg [2:0] state, state_next;
-reg [NBIT-1:0] valor, valor_next;
+reg [7:0] valor, valor_next;
 
 assign STATE = state;
 

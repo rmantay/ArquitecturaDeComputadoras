@@ -45,8 +45,8 @@ Setup/Hold to clock CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-RESET       |    1.868(R)|   -0.092(R)|CLK_IBUF          |   0.000|
-RX          |    2.041(R)|    0.146(R)|CLK_IBUF          |   0.000|
+RESET       |    2.119(R)|    0.418(R)|CLK_IBUF          |   0.000|
+RX          |    2.156(R)|   -0.090(R)|CLK_IBUF          |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -54,7 +54,7 @@ Clock CLK to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-TX          |    8.097(R)|CLK_IBUF          |   0.000|
+TX          |    8.602(R)|CLK_IBUF          |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -62,18 +62,18 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    5.566|    2.008|         |         |
+CLK            |    5.273|    1.573|         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Oct 21 16:34:15 2019 
+Analysis completed Wed Oct 30 15:18:53 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 122 MB
+Peak Memory Usage: 121 MB
 
 
 

@@ -30,8 +30,10 @@ module ProgramaTP2(
 	 wire rx_fifo_empty, tx_fifo_full , fin_enviar, w_fifo_uart , r_fifo_uart;
 	 wire [7:0] r_data_in, data_switch_out, w_data_fifo, led_dato_alu;
 	 wire [2:0] sel_bot;
-	 reg [7:0] leds=0;
-	 reg [7:0] leds_next= 0;
+	 reg [7:0] leds = 0;
+	 reg [7:0] leds_next= 0;	 
+	 wire [7:0] DOUT;
+
 	 reg [2:0] state_rx;
 	 wire [2:0] state;
 	 
@@ -41,24 +43,25 @@ module ProgramaTP2(
 		end
 
 	
-	assign LEDS = leds;
+	assign LEDS = 2**(state);
 	
-	assign STATE = ~(2**(state_rx));
+//	assign STATE = ~(2**(state_rx));
+	assign STATE =  DOUT;
 	
-	always @(posedge RX)
-	begin
-		leds_next = leds + 1;
-	end
+//	always @(posedge RX)
+//	begin
+//		leds_next = leds + 1;
+//	end
 	
-	always @(posedge CLK, posedge RESET)
-	begin
-	if(RESET) begin
-		leds <= 0;
-	end else
-	begin
-		leds <= leds_next;
-	end
-	end
+//	always @(posedge CLK, posedge RESET)
+//	begin
+//	if(RESET) begin
+//		leds <= 0;
+//	end else
+//	begin
+//		leds <= leds_next;
+//	end
+//	end
 	
 UART
 #(
@@ -71,7 +74,7 @@ UART
 uart
 (
 	.CLK(CLK), .RESET(RESET), .rd_uart(r_fifo_uart), .wr_uart(w_fifo_uart), .w_data(w_data_fifo), .rx(RX),
-	.rx_empty(rx_fifo_empty), .tx_full(tx_fifo_full), .r_data(r_data_in) , .tx(TX)
+	.rx_empty(rx_fifo_empty), .tx_full(tx_fifo_full), .r_data(r_data_in) , .tx(TX), .DOUT( DOUT)
 );
 
 Int_Rx

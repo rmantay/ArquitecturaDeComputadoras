@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal_isim_beh.exe" -prj "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal_beh.prj" "work.tp2TestFinal" "work.glbl" 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal_isim_beh.exe -prj D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal_beh.prj work.tp2TestFinal work.glbl 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
@@ -24,11 +24,11 @@ Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/Pr
 Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 77: Port DATOA is not connected to this instance
-WARNING:HDLCompiler:1016 - "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 93: Port STATE is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 80: Port DATOA is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 96: Port STATE is not connected to this instance
 Completed static elaboration
-Fuse Memory Usage: 116664 KB
-Fuse CPU Usage: 390 ms
+Fuse Memory Usage: 116984 KB
+Fuse CPU Usage: 827 ms
 Compiling module BaudRateGen(N=8,M=163)
 Compiling module Rx(N_BIT=8,N_TICK=16)
 Compiling module FIFO(B=8,W=4)
@@ -50,8 +50,8 @@ Compiling module ProgramaTP2
 Compiling module tp2TestFinal
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
+Waiting for 4 sub-compilation(s) to finish...
 Compiled 20 Verilog Units
 Built simulation executable D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal_isim_beh.exe
-Fuse Memory Usage: 121256 KB
-Fuse CPU Usage: 546 ms
+Fuse Memory Usage: 121576 KB
+Fuse CPU Usage: 1390 ms

@@ -9,18 +9,19 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ALU_HANDLER D:|workspace|TP1a|PROGRAMA.v</ClosedNode>
          <ClosedNode>/ALU_HANDLER D:|workspace|TP1a|PROGRAMA.v/alu - ALU</ClosedNode>
+         <ClosedNode>/ProgramaTP2 C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|ProgramaTP2.v/alu - ALU_HANDLER</ClosedNode>
+         <ClosedNode>/ProgramaTP2 C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|ProgramaTP2.v/uart - UART</ClosedNode>
          <ClosedNode>/ProgramaTP2 D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|ProgramaTP2.v/alu - ALU_HANDLER</ClosedNode>
-         <ClosedNode>/ProgramaTP2 D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|ProgramaTP2.v/uart - UART</ClosedNode>
          <ClosedNode>/UART D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|UART.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ProgramaTP2.ucf (D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf)</SelectedItem>
+         <SelectedItem>ProgramaTP2 (C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000105000000020000000000000000000000000200000064ffffffff000000810000000300000002000001050000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000118000000020000000000000000000000000200000064ffffffff000000810000000300000002000001180000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ProgramaTP2.ucf (D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.ucf)</CurrentItem>
+      <CurrentItem>ProgramaTP2 (C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -44,7 +45,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000101000000000000000000000000000000000000027c000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a300000001000000000000008f0000000100000000000000660000000100000000000000e40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000101000000000000000000000000000000000000027d000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a300000001000000000000008f0000000100000000000000660000000100000000000000e50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>SRA.v</CurrentItem>
    </ItemView>
@@ -56,7 +57,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000150000000010001000100000000000000000000000064ffffffff000000810000000000000001000001500000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -68,38 +69,49 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >23</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000140000000010000000100000000000000000000000064ffffffff000000810000000000000001000001400000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/TestBaudRate C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestBaudRate.v</ClosedNode>
          <ClosedNode>/TestBaudRate D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestBaudRate.v</ClosedNode>
+         <ClosedNode>/TestFIFO C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestFIFO.v</ClosedNode>
          <ClosedNode>/TestFIFO D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestFIFO.v</ClosedNode>
          <ClosedNode>/TestIntRx D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestIntRx.v</ClosedNode>
          <ClosedNode>/TestIntRx D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestIntRx.v/ALU1 - ALU_HANDLER</ClosedNode>
+         <ClosedNode>/TestIntRxSola C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestIntRxSola.v</ClosedNode>
          <ClosedNode>/TestIntRxSola D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestIntRxSola.v</ClosedNode>
+         <ClosedNode>/TestIntTx C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestIntTx.v</ClosedNode>
          <ClosedNode>/TestIntTx D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestIntTx.v</ClosedNode>
+         <ClosedNode>/TestInterfacesCompleto C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestIntRx.v</ClosedNode>
          <ClosedNode>/TestInterfacesCompleto D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestIntRx.v</ClosedNode>
+         <ClosedNode>/TestRX C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestRX.v</ClosedNode>
          <ClosedNode>/TestRX D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestRX.v</ClosedNode>
+         <ClosedNode>/TestTx C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestTx.v</ClosedNode>
          <ClosedNode>/TestTx D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestTx.v</ClosedNode>
+         <ClosedNode>/TestUART C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestUART.v</ClosedNode>
          <ClosedNode>/TestUART D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|TestUART.v</ClosedNode>
          <ClosedNode>/UART D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|UART.v</ClosedNode>
+         <ClosedNode>/tp2TestFinal C:|Users|gaspa|Documents|win7VM|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|tp2TestFinal.v</ClosedNode>
          <ClosedNode>/tp2TestFinal D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|tp2TestFinal.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>tp2TestFinal (D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000fb000000020000000000000000000000000200000064ffffffff000000810000000300000002000000fb0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
@@ -108,29 +120,29 @@
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Compile HDL Simulation Libraries</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000150000000010000000100000000000000000000000064ffffffff000000810000000000000001000001500000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Compile HDL Simulation Libraries</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000150000000010000000100000000000000000000000064ffffffff000000810000000000000001000001500000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000000ef0000009001000000040100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -217,12 +229,12 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000150000000010000000100000000000000000000000064ffffffff000000810000000000000001000001500000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
 </Project>

@@ -31,12 +31,15 @@ parameter N_BIT = 8,
 	input wire rd_uart, wr_uart, rx,
 	input wire [N_BIT-1:0] w_data,
 	output wire tx_full, rx_empty, tx,
-	output wire [N_BIT-1:0] r_data
+	output wire [N_BIT-1:0] r_data,
+	output wire [7:0] DOUT
     );
 	 
 	 wire tick, rx_done, tx_done;
 	 wire tx_empty, tx_fifo_not_empty;
 	 wire [N_BIT-1:0] tx_fifo_out, rx_data_out;
+	 
+	 assign DOUT = rx_data_out;
 	 
 	////////////////////////////////////////////////////////////////////////////////////
 	
