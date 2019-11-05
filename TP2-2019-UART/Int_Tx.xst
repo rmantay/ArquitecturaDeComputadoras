@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/xst"
+elaborate
+-ifn Int_Tx.prj
+-ifmt mixed

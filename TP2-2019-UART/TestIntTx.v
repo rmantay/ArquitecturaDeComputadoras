@@ -33,7 +33,7 @@ module TestIntTx;
 
 	// Outputs
 	reg WR_FIFO;
-	wire [7:0] data_fifo;
+	wire [7:0] data_fifo, aux,i,j;
 	wire [2:0] state;
 
 	// Instantiate the Unit Under Test (UUT)
@@ -45,7 +45,8 @@ module TestIntTx;
 		.DATO_ALU(DATO_ALU), 
 		.WR_FIFO(WR_FIFO), 
 		.data_fifo(data_fifo),
-		.STATE(state)
+		.STATE(state),
+		.AUX(aux), .I(i),.J(j)
 	);
 
 	initial begin
@@ -61,9 +62,9 @@ module TestIntTx;
 		// Wait 100 ns for global reset to finish
 		#100;
 		
-		DATO_ALU=10;
+		DATO_ALU=55;
 		enviar=1;
-		#2
+		#20
 		enviar=0;
 		
 		

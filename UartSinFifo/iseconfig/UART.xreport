@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-10-31T18:32:06</DateModified>
+  <DateModified>2019-11-01T19:52:20</DateModified>
   <ModuleName>UART</ModuleName>
   <SummaryTimeStamp>2019-10-30T16:38:10</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/UartSinFifo/iseconfig/UART.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/UartSinFifo\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/workspace/ArquitecturaDeComputadoras/UartSinFifo/iseconfig/UART.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/workspace/ArquitecturaDeComputadoras/UartSinFifo\</ImplementationReportsDirectory>
   <DateInitialized>2019-10-30T15:36:59</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

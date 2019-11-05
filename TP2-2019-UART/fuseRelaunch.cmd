@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal_isim_beh.exe" -prj "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/tp2TestFinal_beh.prj" "work.tp2TestFinal" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntTx_isim_beh.exe" -prj "D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntTx_beh.prj" "work.TestIntTx" "work.glbl" 

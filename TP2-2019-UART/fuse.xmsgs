@@ -5,10 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 80: Port <arg fmt="%s" index="1">DATOA</arg> is not connected to this instance
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v" Line 96: Port <arg fmt="%s" index="1">STATE</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntTx.v" Line 46: Target &lt;<arg fmt="%s" index="1">WR_FIFO</arg>&gt; of concurrent assignment or output port connection should be a net type.
 </msg>
 
 </messages>
