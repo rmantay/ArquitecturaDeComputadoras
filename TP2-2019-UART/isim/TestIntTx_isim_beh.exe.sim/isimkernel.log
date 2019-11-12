@@ -2,9 +2,9 @@ Command line:
    TestIntTx_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49191
+     -socket  49172
 
-Mon Nov 04 15:37:21 2019
+Wed Nov 06 14:23:46 2019
 
 
- Elaboration Time: 0.265625 sec
+ Elaboration Time: 0.234375 sec

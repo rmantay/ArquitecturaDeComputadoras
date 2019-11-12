@@ -62,7 +62,7 @@ module TestIntTx;
 		// Wait 100 ns for global reset to finish
 		#100;
 		
-		DATO_ALU=55;
+		DATO_ALU=75;
 		enviar=1;
 		#20
 		enviar=0;

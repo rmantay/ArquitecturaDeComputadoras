@@ -38,8 +38,8 @@ guardar=2'b11;
 
 reg [2:0] state, state_next;
 reg [7:0] valor, valor_next;
-reg [7:0] aux, aux_next, i, j;
-reg flag=0;
+reg [7:0] aux, aux_next, i, i_next, j, j_next;
+reg flag, flag_next;
 
 assign AUX=aux;
 assign I=i;
@@ -61,7 +61,9 @@ begin
 			state<=state_next;
 			valor<=valor_next;
 			aux<=aux_next;
-			
+			i<=i_next;
+			j<=j_next;
+			flag<=flag_next;
 			end
 end
 
@@ -71,6 +73,9 @@ begin
 	state_next=state;
 	valor_next=valor;
 	aux_next=aux;
+	i_next=i;
+	j_next=j;
+	flag_next=flag;
 	
 	case(state)
 		idle:
@@ -78,9 +83,9 @@ begin
 			begin
 				state_next=dividir;
 				aux_next=DATO_ALU;
-				flag=0;
-				i=0;
-				j=0;
+				flag_next=0;
+				i_next=0;
+				j_next=0;
 				//AGREGAR LOGICA PARA MANDAR VARIOS DIGITOS
 			end
 			else
@@ -91,15 +96,15 @@ begin
 				if(aux>=100) 
 					begin
 						aux_next = aux - 100;
-						i=i+1;
+						i_next=i+1;
 					end					
 				else if (aux>=10)
 					begin
 						aux_next= aux-10;
-						j=j+1;
+						j_next=j+1;
 					end
 				else begin
-						flag= 1;
+						flag_next = 1;
 						end
 								
 				if(flag)
@@ -115,20 +120,20 @@ begin
 				begin
 					data_fifo = i + 48;
 					WR_FIFO=1;
-					i=0;
+					i_next=0;
 				end
 				else if (j>0)
 				begin
 					data_fifo = j + 48;
 					WR_FIFO=1;
-					j=0;
+					j_next=0;
 				end 
 				else 
 				begin
 					data_fifo = aux + 48;
 					WR_FIFO=1;
-					flag=0;
-					//state_next=idle;
+					flag_next=0;
+					state_next=idle;
 				end						
 			end			
 		endcase

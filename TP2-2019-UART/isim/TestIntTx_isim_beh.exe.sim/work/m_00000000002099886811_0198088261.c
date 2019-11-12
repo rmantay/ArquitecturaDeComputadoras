@@ -24,7 +24,7 @@
 static const char *ng0 = "//vboxsrv/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/TestIntTx.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
-static int ng3[] = {55, 0};
+static int ng3[] = {75, 0};
 
 
 

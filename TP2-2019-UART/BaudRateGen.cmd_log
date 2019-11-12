@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/BaudRateGen.v -lang verilog -prj TP2-2019-UART -o BaudRateGen.spl -module BaudRateGen -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BaudRateGen.spl C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/BaudRateGen.sym 
+vhdtdtfi -lang verilog -prj TP2-2019-UART -o C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/BaudRateGen.tfi -lib work C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART//BaudRateGen.v -module BaudRateGen -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
