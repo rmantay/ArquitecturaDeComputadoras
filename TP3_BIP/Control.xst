@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/xst"
+elaborate
+-ifn Control.prj
+-ifmt mixed

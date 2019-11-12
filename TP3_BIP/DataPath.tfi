@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+DataPath instance_name (
+    .CLK(CLK), 
+    .RESET(RESET), 
+    .OPERAND_IN(OPERAND_IN), 
+    .DM_IN(DM_IN), 
+    .SEL_A(SEL_A), 
+    .SEL_B(SEL_B), 
+    .WR_ACC(WR_ACC), 
+    .OP(OP), 
+    .ACC(ACC), 
+    .OPERAND_OUT(OPERAND_OUT)
+    );
+
+

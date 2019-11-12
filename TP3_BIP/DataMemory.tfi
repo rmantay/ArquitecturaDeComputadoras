@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+DataMemory instance_name (
+    .CLK(CLK), 
+    .RESET(RESET), 
+    .RD(RD), 
+    .WR(WR), 
+    .ADDR(ADDR), 
+    .IN_DATA(IN_DATA), 
+    .OUT_DATA(OUT_DATA)
+    );
+
+

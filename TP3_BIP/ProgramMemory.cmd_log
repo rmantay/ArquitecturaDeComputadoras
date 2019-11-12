@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/ProgramMemory.v -lang verilog -prj TP3_BIP -o ProgramMemory.spl -module ProgramMemory -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ProgramMemory.spl C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/ProgramMemory.sym 
+vhdtdtfi -lang verilog -prj TP3_BIP -o C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/ProgramMemory.tfi -lib work C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP//ProgramMemory.v -module ProgramMemory -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

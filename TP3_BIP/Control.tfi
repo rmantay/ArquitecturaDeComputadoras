@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+Control instance_name (
+    .CLK(CLK), 
+    .RESET(RESET), 
+    .INSTRUCTION(INSTRUCTION), 
+    .SEL_A(SEL_A), 
+    .SEL_B(SEL_B), 
+    .WR_ACC(WR_ACC), 
+    .OP(OP), 
+    .WR_RAM(WR_RAM), 
+    .RD_RAM(RD_RAM), 
+    .OPERAND(OPERAND), 
+    .PC(PC)
+    );
+
+

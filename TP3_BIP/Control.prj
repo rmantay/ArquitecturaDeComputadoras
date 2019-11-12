@@ -1,0 +1,5 @@
+verilog work "SUB.v"
+verilog work "ADD.v"
+verilog work "InstructionDecoder.v"
+verilog work "ALU.v"
+verilog work "Control.v"

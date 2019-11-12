@@ -1,0 +1,6 @@
+verilog work "SUB.v"
+verilog work "ADD.v"
+verilog work "Mux2.v"
+verilog work "Mux.v"
+verilog work "ALU.v"
+verilog work "DataPath.v"

@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj TP3_BIP -o C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/InstructionDecoder.tfi -lib work C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP//InstructionDecoder.v -module InstructionDecoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

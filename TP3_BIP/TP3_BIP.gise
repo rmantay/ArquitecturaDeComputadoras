@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="TP3_BIP.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ADD.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ADD.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ADD.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ADD.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ALU.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="ALU.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CPU.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="CPU.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="CPU.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="CPU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Control.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Control.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Control.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Control.xst"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="DataMemory.tfi"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DataPath.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DataPath.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="DataPath.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="DataPath.xst"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="InstructionDecoder.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Mux1.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Mux2.tfi"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ProgramMemory.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ProgramMemory.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ProgramMemory.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ProgramMemory.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="ProgramMemory.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ProgramMemory.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SUB.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SUB.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SUB.xst"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+
+</generated_project>

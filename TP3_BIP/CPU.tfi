@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+CPU instance_name (
+    .CLK(CLK), 
+    .RESET(RESET), 
+    .INSTRUCTION(INSTRUCTION), 
+    .DM_IN(DM_IN), 
+    .ADDR_PM(ADDR_PM), 
+    .ADDR_DM(ADDR_DM), 
+    .ACC(ACC), 
+    .RD(RD), 
+    .WR(WR)
+    );
+
+

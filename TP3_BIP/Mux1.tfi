@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+Mux1 instance_name (
+    .A(A), 
+    .B(B), 
+    .sel(sel), 
+    .OUT(OUT)
+    );
+
+

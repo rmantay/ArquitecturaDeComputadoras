@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+ProgramMemory instance_name (
+    .CLK(CLK), 
+    .RESET(RESET), 
+    .ADDR(ADDR), 
+    .DATA(DATA)
+    );
+
+

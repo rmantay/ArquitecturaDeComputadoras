@@ -1,0 +1,45 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SUB.v" in library work
+Compiling verilog file "ADD.v" in library work
+Module <SUB> compiled
+Compiling verilog file "InstructionDecoder.v" in library work
+Module <ADD> compiled
+Compiling verilog file "ALU.v" in library work
+Module <InstructionDecoder> compiled
+Compiling verilog file "Control.v" in library work
+Module <ALU> compiled
+Module <Control> compiled
+No errors in compilation
+Analysis of file <"Control.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> 
+
+Total memory usage is 232600 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
