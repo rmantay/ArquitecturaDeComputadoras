@@ -16,13 +16,13 @@
          <ClosedNode>/UART D:|workspace|ArquitecturaDeComputadoras|TP2-2019-UART|UART.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>fifo_tx - FIFO (C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/FIFO.v)</SelectedItem>
+         <SelectedItem>ProgramaTP2 (D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000118000000020000000000000000000000000200000064ffffffff000000810000000300000002000001180000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000105000000020000000000000000000000000200000064ffffffff000000810000000300000002000001050000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>fifo_tx - FIFO (C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/FIFO.v)</CurrentItem>
+      <CurrentItem>ProgramaTP2 (D:/workspace/ArquitecturaDeComputadoras/TP2-2019-UART/ProgramaTP2.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -46,7 +46,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000101000000000000000000000000000000000000027d000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a300000001000000000000008f0000000100000000000000660000000100000000000000e50000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000101000000000000000000000000000000000000027c000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a300000001000000000000008f0000000100000000000000660000000100000000000000e40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>SRA.v</CurrentItem>
    </ItemView>
@@ -79,7 +79,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000140000000010000000100000000000000000000000064ffffffff000000810000000000000001000001400000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>

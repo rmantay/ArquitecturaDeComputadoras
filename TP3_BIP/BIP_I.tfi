@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+BIP_I instance_name (
+    .CLK(CLK), 
+    .RESET(RESET), 
+    .TX(TX)
+    );
+
+

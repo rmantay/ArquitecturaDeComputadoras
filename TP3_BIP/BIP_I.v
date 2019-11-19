@@ -20,7 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 module BIP_I(
 		input CLK,
-		input RESET
+		input RESET,
+		
+		output [15:0] ACC_OUT,
+		output reg WR_FIFO
 		
 
     );
@@ -32,9 +35,17 @@ module BIP_I(
 		wire [10:0] ADDR_PM;
 		wire [10:0] ADDR_DM;
 		wire [15:0] ACC;
-		wire [10:0] PC;
+		reg [10:0] PC, PC_next;
 		wire RD;
 		wire WR;
+				
+		wire tx_full;
+		
+		wire wr_acc;
+		reg wr_fifo_next = 0;
+		
+		assign ACC_OUT = ACC;
+		//assign WR_FIFO = wr_fifo;
 	 
 	 ProgramMemory PM (
     .CLK(CLK), 
@@ -64,17 +75,32 @@ module BIP_I(
     .ADDR_DM(ADDR_DM), 
     .ACC(ACC), 
     .RD(RD), 
-    .WR(WR)
+    .WR(WR),
+	 .WrAcc(wr_acc)
     );
 	 
-	 assign PC = ADDR_PM;
-
-
+	 always @(*)
+	 begin
+	  if(wr_acc)
+			wr_fifo_next=1;
+			else
+			wr_fifo_next=0;
+		
+	end
+	
+	always @(posedge CLK, posedge RESET)
+	begin
+		if(RESET)
+			begin
+				WR_FIFO <= 0;
+			end
+		else
+			begin
+				WR_FIFO<=wr_fifo_next;
+			end
+	end
 	 
 
-
-
-	 
 
 
 endmodule

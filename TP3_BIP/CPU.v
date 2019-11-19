@@ -28,12 +28,12 @@ module CPU(
 		output [10:0] ADDR_DM,
 		output [15:0] ACC,
 		output RD,
-		output WR
+		output WR,
+		output WrAcc
     );
 	 
 	 wire [1:0] sel_A;
 	 wire sel_B;
-	 wire WrAcc;
 	 wire Op;
 	 wire [10:0] operand;
 
@@ -51,7 +51,7 @@ Control control (
     .PC(ADDR_PM)
     );
 
-DataPath instance_name (
+DataPath data_path (
     .CLK(CLK), 
     .RESET(RESET), 
     .OPERAND_IN(operand), 

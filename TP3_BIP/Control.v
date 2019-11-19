@@ -75,15 +75,12 @@ module Control(
     .RD_RAM(RD_RAM)
     );
 	 
-	 ALU alu1 (
+	 ALU #(.N(10)) 
+	 alu1 (
     .A(PC), 
     .B(cte), 
     .O(OpPC), 
     .Z(result)
     );
-
-
-
-
 
 endmodule

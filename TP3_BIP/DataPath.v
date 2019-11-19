@@ -35,7 +35,7 @@ module DataPath(
 	wire [15:0] signal_extension;
 	wire [15:0] out_mux1;
 	wire [15:0] out_mux2;
-	reg  [15:0] acc_out;
+	reg  [15:0] acc_next;
 	wire [15:0] alu_out;
 	
 	assign signal_extension = {5'b00000, OPERAND_IN};
@@ -48,7 +48,7 @@ module DataPath(
 				end
 			else
 				begin
-					ACC <= acc_out;
+					ACC <= acc_next;
 				end
 		end
 	
@@ -67,8 +67,9 @@ module DataPath(
     .OUT(out_mux2)
     );
 	 
-	 ALU alu2 (
-    .A(acc_out), 
+	 ALU #( .N(15))
+	 alu2 (
+    .A(ACC), 
     .B(out_mux1), 
     .O(OP), 
     .Z(alu_out)
@@ -76,9 +77,9 @@ module DataPath(
 
 	always @(*)
 	begin
-		acc_out = ACC;
+		acc_next = ACC;
 		if(WR_ACC)
-			acc_out = out_mux2;
+			acc_next = out_mux2;
 	end
 	
 	assign OPERAND_OUT = OPERAND_IN;

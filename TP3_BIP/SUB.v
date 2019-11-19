@@ -18,10 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SUB(
-    input [10:0] A,
-    input [10:0] B,
-    output reg signed [10:0] Z
+module SUB#(parameter N = 15)
+	(
+    input [N:0] A,
+    input [N:0] B,
+    output reg signed[N:0] Z
     );
 		always @(*) 
 			Z=A-B;

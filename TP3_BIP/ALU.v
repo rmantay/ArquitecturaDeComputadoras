@@ -18,17 +18,18 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ALU(
-    input signed [10:0] A,
-    input signed [10:0] B,
+module ALU
+	#(parameter N = 15)
+	(
+    input  [N:0] A,
+    input  [N:0] B,
     input O,
-    output signed [10:0] Z
+    output reg signed [N:0] Z
     );
 	 
-	 wire [10:0] sum, rest; //, y, o, x, s1,s2,no;
-	 reg  [10:0] salida;	
-	 ADD suma(A,B,sum);
-	 SUB resta(A,B,rest);
+//	 wire [N:0] sum, rest; //, y, o, x, s1,s2,no;
+//	 ADD #(.N(N)) suma(A,B,sum);
+//	 SUB #(.N(N)) resta(A,B,rest);
 //	 AND and1(A,B,y);
 //	 OR  or1(A,B,o);
 //	 XOR xor1(A,B,x);
@@ -36,13 +37,12 @@ module ALU(
 //	 SRL srl1(A,B,s2);
 //	 NOR nor1(A,B,no);
 
-	 assign Z=salida;
 	 
 	always @(*)
 	begin
 	case(O)
-	1'b1: salida = sum;			//suma
-	1'b0: salida = rest;			//resta
+	1'b1: Z = A+B;			//suma
+	1'b0: Z = A-B;			//resta
 
 //	8'b00100001: salida = s2;			//srl
 //	8'b00100011: salida = s1;        //sra
@@ -50,7 +50,7 @@ module ALU(
 //	8'b00100101: salida = o;			//or
 //	8'b00100110: salida = x;			//xor
 //	8'b00100111: salida = no;			//nor
-	default 	  : salida = 0;
+	default 	  : Z = 0;
 	endcase
 	end
 endmodule

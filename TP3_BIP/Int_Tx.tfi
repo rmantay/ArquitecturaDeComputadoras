@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+Int_Tx instance_name (
+    .CLK(CLK), 
+    .RESET(RESET), 
+    .enviar(enviar), 
+    .fifo_full(fifo_full), 
+    .DATO_ALU(DATO_ALU), 
+    .WR_FIFO(WR_FIFO), 
+    .data_fifo(data_fifo), 
+    .STATE(STATE), 
+    .AUX(AUX), 
+    .I(I), 
+    .J(J)
+    );
+
+

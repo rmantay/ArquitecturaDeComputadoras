@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/PruebaCpu_isim_beh.exe" -prj "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/PruebaCpu_beh.prj" "work.PruebaCpu" "work.glbl" 

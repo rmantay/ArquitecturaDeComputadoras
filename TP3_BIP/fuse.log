@@ -1,0 +1,36 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/PruebaCpu_isim_beh.exe -prj D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/PruebaCpu_beh.prj work.PruebaCpu work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/Mux2.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/Mux.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/InstructionDecoder.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/ALU.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/ProgramMemory.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/DataPath.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/DataMemory.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/Control.v" into library work
+Analyzing Verilog file "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/PruebaCpu.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 116984 KB
+Fuse CPU Usage: 280 ms
+Compiling module Mux1
+Compiling module Mux2
+Compiling module ALU
+Compiling module DataPath
+Compiling module InstructionDecoder
+Compiling module ALU(N=10)
+Compiling module Control
+Compiling module DataMemory
+Compiling module ProgramMemory
+Compiling module PruebaCpu
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/PruebaCpu_isim_beh.exe
+Fuse Memory Usage: 121576 KB
+Fuse CPU Usage: 312 ms

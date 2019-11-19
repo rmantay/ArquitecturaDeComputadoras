@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Nov 12 15:31:11 2019
+# Process ID: 4004
+# Log file: D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/planAhead_run_1/planAhead.log
+# Journal file: D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin B8 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin A7 [get_ports RESET]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports TX]
+endgroup
+save_constraints

@@ -1,0 +1,276 @@
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 
+xst -intstyle ise -ifn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.xst" -ofn "C:/Users/gaspa/Documents/win7VM/workspace/ArquitecturaDeComputadoras/TP3_BIP/TP3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BIP_I.ucf -p xc3s100e-cp132-4 TP3.ngc TP3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o TP3_map.ncd TP3.ngd TP3.pcf 
+par -w -intstyle ise -ol high -t 1 TP3_map.ncd TP3.ncd TP3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml TP3.twx TP3.ncd -o TP3.twr TP3.pcf -ucf BIP_I.ucf 
+bitgen -intstyle ise -f TP3.ut TP3.ncd 

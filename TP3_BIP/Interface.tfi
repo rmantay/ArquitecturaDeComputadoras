@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+Interface instance_name (
+    .CLK(CLK), 
+    .RESET(RESET), 
+    .DATA_IN(DATA_IN), 
+    .WR(WR), 
+    .TX(TX)
+    );
+
+

@@ -1,0 +1,10 @@
+Command line:
+   PruebaCpu_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49163
+
+Tue Nov 19 13:17:56 2019
+
+
+ Elaboration Time: 0.09375 sec

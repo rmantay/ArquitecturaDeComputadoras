@@ -1,0 +1,52 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Mux2.v" in library work
+Compiling verilog file "Mux.v" in library work
+Module <Mux2> compiled
+Compiling verilog file "InstructionDecoder.v" in library work
+Module <Mux1> compiled
+Compiling verilog file "ALU.v" in library work
+Module <InstructionDecoder> compiled
+Compiling verilog file "DataPath.v" in library work
+Module <ALU> compiled
+Compiling verilog file "Control.v" in library work
+Module <DataPath> compiled
+Compiling verilog file "ProgramMemory.v" in library work
+Module <Control> compiled
+Compiling verilog file "DataMemory.v" in library work
+Module <ProgramMemory> compiled
+Compiling verilog file "CPU.v" in library work
+Module <DataMemory> compiled
+Compiling verilog file "BIP_I.v" in library work
+Module <CPU> compiled
+Module <BIP_I> compiled
+ERROR:HDLCompilers:247 - "BIP_I.v" line 95 Reference to scalar wire 'WR_FIFO' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:106 - "BIP_I.v" line 95 Illegal left hand side of nonblocking assignment
+ERROR:HDLCompilers:247 - "BIP_I.v" line 99 Reference to scalar wire 'WR_FIFO' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:106 - "BIP_I.v" line 99 Illegal left hand side of nonblocking assignment
+Analysis of file <"BIP_I.prj"> failed.
+--> 
+
+Total memory usage is 168396 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

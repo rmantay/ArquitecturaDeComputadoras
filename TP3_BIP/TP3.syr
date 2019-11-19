@@ -1,0 +1,1183 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: TP3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TP3.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TP3"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : TP3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Mux2.v" in library work
+Compiling verilog file "Mux.v" in library work
+Module <Mux2> compiled
+Compiling verilog file "InstructionDecoder.v" in library work
+Module <Mux1> compiled
+Compiling verilog file "ALU.v" in library work
+Module <InstructionDecoder> compiled
+Compiling verilog file "Tx.v" in library work
+Module <ALU> compiled
+Compiling verilog file "Rx.v" in library work
+Module <Tx> compiled
+Compiling verilog file "FIFO.v" in library work
+Module <Rx> compiled
+Compiling verilog file "DataPath.v" in library work
+Module <FIFO> compiled
+Compiling verilog file "Control.v" in library work
+Module <DataPath> compiled
+Compiling verilog file "BaudRateGen.v" in library work
+Module <Control> compiled
+Compiling verilog file "UART.v" in library work
+Module <BaudRateGen> compiled
+Compiling verilog file "ProgramMemory.v" in library work
+Module <UART> compiled
+Compiling verilog file "Int_Tx.v" in library work
+Module <ProgramMemory> compiled
+Compiling verilog file "DataMemory.v" in library work
+Module <Int_Tx> compiled
+Compiling verilog file "CPU.v" in library work
+Module <DataMemory> compiled
+Compiling verilog file "Interface.v" in library work
+Module <CPU> compiled
+Compiling verilog file "BIP_I.v" in library work
+Module <Interface> compiled
+Compiling verilog file "TP3.v" in library work
+Module <BIP_I> compiled
+Module <TP3> compiled
+No errors in compilation
+Analysis of file <"TP3.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <TP3> in library <work>.
+
+Analyzing hierarchy for module <BIP_I> in library <work>.
+
+Analyzing hierarchy for module <Interface> in library <work>.
+
+Analyzing hierarchy for module <ProgramMemory> in library <work>.
+
+Analyzing hierarchy for module <DataMemory> in library <work>.
+
+Analyzing hierarchy for module <CPU> in library <work>.
+
+Analyzing hierarchy for module <FIFO> in library <work> with parameters.
+	B = "00000000000000000000000000001000"
+	W = "00000000000000000000000000000101"
+
+Analyzing hierarchy for module <Int_Tx> in library <work> with parameters.
+	NBIT = "00000000000000000000000000001000"
+	convertir = "10"
+	dividir = "01"
+	idle = "00"
+
+Analyzing hierarchy for module <UART> in library <work> with parameters.
+	DVSR = "00000000000000000000000010100011"
+	DVSR_BIT = "00000000000000000000000000001000"
+	FIFO_W = "00000000000000000000000000000101"
+	N_BIT = "00000000000000000000000000001000"
+	N_TICK = "00000000000000000000000000010000"
+
+Analyzing hierarchy for module <Control> in library <work>.
+
+Analyzing hierarchy for module <DataPath> in library <work>.
+
+Analyzing hierarchy for module <BaudRateGen> in library <work> with parameters.
+	M = "00000000000000000000000010100011"
+	N = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <Rx> in library <work> with parameters.
+	N_BIT = "00000000000000000000000000001000"
+	N_TICK = "00000000000000000000000000010000"
+	data = "10"
+	idle = "00"
+	start = "01"
+	stop = "11"
+
+Analyzing hierarchy for module <FIFO> in library <work> with parameters.
+	B = "00000000000000000000000000001000"
+	W = "00000000000000000000000000000101"
+
+Analyzing hierarchy for module <Tx> in library <work> with parameters.
+	N_BIT = "00000000000000000000000000001000"
+	N_TICK = "00000000000000000000000000010000"
+	data = "10"
+	idle = "00"
+	start = "01"
+	stop = "11"
+
+Analyzing hierarchy for module <InstructionDecoder> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work> with parameters.
+	N = "00000000000000000000000000001010"
+
+Analyzing hierarchy for module <Mux1> in library <work>.
+
+Analyzing hierarchy for module <Mux2> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work> with parameters.
+	N = "00000000000000000000000000001111"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <TP3>.
+Module <TP3> is correct for synthesis.
+ 
+Analyzing module <BIP_I> in library <work>.
+Module <BIP_I> is correct for synthesis.
+ 
+Analyzing module <ProgramMemory> in library <work>.
+Module <ProgramMemory> is correct for synthesis.
+ 
+Analyzing module <DataMemory> in library <work>.
+Module <DataMemory> is correct for synthesis.
+ 
+Analyzing module <CPU> in library <work>.
+Module <CPU> is correct for synthesis.
+ 
+Analyzing module <Control> in library <work>.
+Module <Control> is correct for synthesis.
+ 
+Analyzing module <InstructionDecoder> in library <work>.
+Module <InstructionDecoder> is correct for synthesis.
+ 
+Analyzing module <ALU.1> in library <work>.
+	N = 32'sb00000000000000000000000000001010
+Module <ALU.1> is correct for synthesis.
+ 
+Analyzing module <DataPath> in library <work>.
+Module <DataPath> is correct for synthesis.
+ 
+Analyzing module <Mux1> in library <work>.
+Module <Mux1> is correct for synthesis.
+ 
+Analyzing module <Mux2> in library <work>.
+Module <Mux2> is correct for synthesis.
+ 
+Analyzing module <ALU.2> in library <work>.
+	N = 32'sb00000000000000000000000000001111
+Module <ALU.2> is correct for synthesis.
+ 
+Analyzing module <Interface> in library <work>.
+WARNING:Xst:852 - "Interface.v" line 48: Unconnected input port 'fifo_full' of instance 'divisor' is tied to GND.
+WARNING:Xst:852 - "Interface.v" line 59: Unconnected input port 'rd_uart' of instance 'uart' is tied to GND.
+WARNING:Xst:852 - "Interface.v" line 59: Unconnected input port 'rx' of instance 'uart' is tied to GND.
+Module <Interface> is correct for synthesis.
+ 
+Analyzing module <FIFO.1> in library <work>.
+	B = 32'sb00000000000000000000000000001000
+	W = 32'sb00000000000000000000000000000101
+Module <FIFO.1> is correct for synthesis.
+ 
+Analyzing module <Int_Tx> in library <work>.
+WARNING:Xst:863 - "Int_Tx.v" line 30: Name conflict (<aux> and <AUX>, renaming aux as aux_rnm0).
+WARNING:Xst:863 - "Int_Tx.v" line 29: Name conflict (<state> and <STATE>, renaming state as state_rnm0).
+WARNING:Xst:863 - "Int_Tx.v" line 30: Name conflict (<i> and <I>, renaming i as i_rnm0).
+WARNING:Xst:863 - "Int_Tx.v" line 30: Name conflict (<j> and <J>, renaming j as j_rnm0).
+	NBIT = 32'sb00000000000000000000000000001000
+	convertir = 2'b10
+	dividir = 2'b01
+	idle = 2'b00
+WARNING:Xst:2725 - "Int_Tx.v" line 82: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Int_Tx.v" line 95: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "Int_Tx.v" line 118: Size mismatch between case item and case selector.
+Module <Int_Tx> is correct for synthesis.
+ 
+Analyzing module <UART> in library <work>.
+WARNING:Xst:863 - "UART.v" line 38: Name conflict (<TICK> and <tick>, renaming TICK as tick_rnm0).
+	DVSR = 32'sb00000000000000000000000010100011
+	DVSR_BIT = 32'sb00000000000000000000000000001000
+	FIFO_W = 32'sb00000000000000000000000000000101
+	N_BIT = 32'sb00000000000000000000000000001000
+	N_TICK = 32'sb00000000000000000000000000010000
+Module <UART> is correct for synthesis.
+ 
+Analyzing module <BaudRateGen> in library <work>.
+	M = 32'sb00000000000000000000000010100011
+	N = 32'sb00000000000000000000000000001000
+Module <BaudRateGen> is correct for synthesis.
+ 
+Analyzing module <Rx> in library <work>.
+WARNING:Xst:863 - "Rx.v" line 31: Name conflict (<state> and <STATE>, renaming state as state_rnm0).
+	N_BIT = 32'sb00000000000000000000000000001000
+	N_TICK = 32'sb00000000000000000000000000010000
+	data = 2'b10
+	idle = 2'b00
+	start = 2'b01
+	stop = 2'b11
+Module <Rx> is correct for synthesis.
+ 
+Analyzing module <FIFO.2> in library <work>.
+	B = 32'sb00000000000000000000000000001000
+	W = 32'sb00000000000000000000000000000101
+Module <FIFO.2> is correct for synthesis.
+ 
+Analyzing module <Tx> in library <work>.
+WARNING:Xst:863 - "Tx.v" line 32: Name conflict (<state> and <STATE>, renaming state as state_rnm0).
+	N_BIT = 32'sb00000000000000000000000000001000
+	N_TICK = 32'sb00000000000000000000000000010000
+	data = 2'b10
+	idle = 2'b00
+	start = 2'b01
+	stop = 2'b11
+Module <Tx> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <buffer<0>> in unit <ProgramMemory> has a constant value of 0000100000000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<1>> in unit <ProgramMemory> has a constant value of 0000100000000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<2>> in unit <ProgramMemory> has a constant value of 0001100000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<3>> in unit <ProgramMemory> has a constant value of 0010100000000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<4>> in unit <ProgramMemory> has a constant value of 0010100000000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<5>> in unit <ProgramMemory> has a constant value of 0010100000000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<6>> in unit <ProgramMemory> has a constant value of 0000100000000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<7>> in unit <ProgramMemory> has a constant value of 0011100000000010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<8>> in unit <ProgramMemory> has a constant value of 0011100000000010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<9>> in unit <ProgramMemory> has a constant value of 0011100000000010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<10>> in unit <ProgramMemory> has a constant value of 0001100000000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<11>> in unit <ProgramMemory> has a constant value of 0010100000000101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<12>> in unit <ProgramMemory> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <i> in unit <DataMemory> has a constant value of 1010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <OpPC> in unit <Control> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <cte> in unit <Control> has a constant value of 00000000001 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <ProgramMemory>.
+    Related source file is "ProgramMemory.v".
+WARNING:Xst:647 - Input <ADDR<10:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <buffer<32:13>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+    Found 33x16-bit ROM for signal <$COND_1>.
+    Found 16-bit register for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <ProgramMemory> synthesized.
+
+
+Synthesizing Unit <DataMemory>.
+    Related source file is "DataMemory.v".
+WARNING:Xst:647 - Input <ADDR<10:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <OUT_DATA>.
+    Found 160-bit register for signal <data_list>.
+    Found 16-bit 4-to-1 multiplexer for signal <OUT_DATA$mux0000> created at line 47.
+    Summary:
+	inferred 176 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <DataMemory> synthesized.
+
+
+Synthesizing Unit <InstructionDecoder>.
+    Related source file is "InstructionDecoder.v".
+WARNING:Xst:737 - Found 2-bit latch for signal <SEL_A>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <SEL_B>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <InstructionDecoder> synthesized.
+
+
+Synthesizing Unit <ALU_1>.
+    Related source file is "ALU.v".
+    Found 11-bit adder for signal <Z>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ALU_1> synthesized.
+
+
+Synthesizing Unit <Mux1>.
+    Related source file is "Mux.v".
+Unit <Mux1> synthesized.
+
+
+Synthesizing Unit <Mux2>.
+    Related source file is "Mux2.v".
+    Found 16-bit 4-to-1 multiplexer for signal <OUT>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <Mux2> synthesized.
+
+
+Synthesizing Unit <ALU_2>.
+    Related source file is "ALU.v".
+    Found 16-bit addsub for signal <Z$addsub0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ALU_2> synthesized.
+
+
+Synthesizing Unit <FIFO_1>.
+    Related source file is "FIFO.v".
+WARNING:Xst:646 - Signal <w_ptr_succ> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r_ptr_succ> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32x8-bit dual-port RAM <Mram_cola_circular> for signal <cola_circular>.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_next>.
+    Found 5-bit comparator equal for signal <empty_next$cmp_eq0000> created at line 83.
+    Found 1-bit register for signal <empty_reg>.
+    Found 1-bit 4-to-1 multiplexer for signal <full_next>.
+    Found 5-bit comparator equal for signal <full_next$cmp_eq0000> created at line 92.
+    Found 1-bit register for signal <full_reg>.
+    Found 5-bit register for signal <r_ptr_reg>.
+    Found 5-bit register for signal <w_ptr_reg>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <FIFO_1> synthesized.
+
+
+Synthesizing Unit <Int_Tx>.
+    Related source file is "Int_Tx.v".
+WARNING:Xst:647 - Input <fifo_full> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_0> for signal <state_rnm0>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 8-bit latch for signal <data_fifo>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit subtractor for signal <aux_next$share0000>.
+    Found 8-bit register for signal <aux_rnm0>.
+    Found 8-bit adder for signal <data_fifo$mux0000>.
+    Found 1-bit register for signal <flag>.
+    Found 8-bit comparator greatequal for signal <flag_next$cmp_ge0000> created at line 97.
+    Found 8-bit comparator greatequal for signal <flag_next$cmp_ge0001> created at line 102.
+    Found 8-bit adder for signal <i_next$addsub0000> created at line 100.
+    Found 8-bit register for signal <i_rnm0>.
+    Found 8-bit adder for signal <j_next$addsub0000> created at line 105.
+    Found 8-bit register for signal <j_rnm0>.
+    Found 8-bit comparator greater for signal <state_rnm0$cmp_gt0000> created at line 120.
+    Found 8-bit comparator greater for signal <state_rnm0$cmp_gt0001> created at line 126.
+    Found 1-bit register for signal <valor>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <Int_Tx> synthesized.
+
+
+Synthesizing Unit <BaudRateGen>.
+    Related source file is "BaudRateGen.v".
+    Found 8-bit up counter for signal <contador>.
+    Found 1-bit register for signal <ti>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <BaudRateGen> synthesized.
+
+
+Synthesizing Unit <Rx>.
+    Related source file is "Rx.v".
+    Found finite state machine <FSM_1> for signal <state_rnm0>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <b>.
+    Found 3-bit register for signal <n>.
+    Found 3-bit adder for signal <n_next$addsub0000> created at line 95.
+    Found 4-bit register for signal <s>.
+    Found 4-bit adder for signal <s_next$share0000> created at line 67.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <Rx> synthesized.
+
+
+Synthesizing Unit <FIFO_2>.
+    Related source file is "FIFO.v".
+WARNING:Xst:646 - Signal <w_ptr_succ> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <r_ptr_succ> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32x8-bit dual-port RAM <Mram_cola_circular> for signal <cola_circular>.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_next>.
+    Found 5-bit comparator equal for signal <empty_next$cmp_eq0000> created at line 83.
+    Found 1-bit register for signal <empty_reg>.
+    Found 1-bit 4-to-1 multiplexer for signal <full_next>.
+    Found 5-bit comparator equal for signal <full_next$cmp_eq0000> created at line 92.
+    Found 1-bit register for signal <full_reg>.
+    Found 5-bit register for signal <r_ptr_reg>.
+    Found 5-bit register for signal <w_ptr_reg>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <FIFO_2> synthesized.
+
+
+Synthesizing Unit <Tx>.
+    Related source file is "Tx.v".
+    Found finite state machine <FSM_2> for signal <state_rnm0>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <b>.
+    Found 3-bit register for signal <n>.
+    Found 3-bit adder for signal <n_next$addsub0000> created at line 109.
+    Found 4-bit register for signal <s>.
+    Found 4-bit adder for signal <s_next$share0000> created at line 73.
+    Found 1-bit register for signal <tx_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <Tx> synthesized.
+
+
+Synthesizing Unit <Control>.
+    Related source file is "Control.v".
+    Found 11-bit register for signal <OPERAND>.
+    Found 11-bit register for signal <PC>.
+    Found 5-bit register for signal <opcode>.
+    Found 5-bit comparator greater for signal <PC_next$cmp_gt0000> created at line 47.
+    Summary:
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Control> synthesized.
+
+
+Synthesizing Unit <DataPath>.
+    Related source file is "DataPath.v".
+    Found 16-bit register for signal <ACC>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <DataPath> synthesized.
+
+
+Synthesizing Unit <UART>.
+    Related source file is "UART.v".
+WARNING:Xst:1780 - Signal <tick> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <UART> synthesized.
+
+
+Synthesizing Unit <Interface>.
+    Related source file is "Interface.v".
+WARNING:Xst:647 - Input <DATA_IN<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <data_int<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <data_fifo<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <DOUT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Interface> synthesized.
+
+
+Synthesizing Unit <CPU>.
+    Related source file is "CPU.v".
+Unit <CPU> synthesized.
+
+
+Synthesizing Unit <BIP_I>.
+    Related source file is "BIP_I.v".
+WARNING:Xst:1780 - Signal <tx_full> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <RESULT> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <WR_FIFO>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <BIP_I> synthesized.
+
+
+Synthesizing Unit <TP3>.
+    Related source file is "TP3.v".
+Unit <TP3> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 32x8-bit dual-port RAM                                : 3
+# ROMs                                                 : 1
+ 33x16-bit ROM                                         : 1
+# Adders/Subtractors                                   : 16
+ 11-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 6
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 41
+ 1-bit register                                        : 10
+ 11-bit register                                       : 2
+ 16-bit register                                       : 13
+ 3-bit register                                        : 2
+ 4-bit register                                        : 2
+ 5-bit register                                        : 7
+ 8-bit register                                        : 5
+# Latches                                              : 3
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 11
+ 5-bit comparator equal                                : 6
+ 5-bit comparator greater                              : 1
+ 8-bit comparator greatequal                           : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 9
+ 1-bit 4-to-1 multiplexer                              : 6
+ 16-bit 10-to-1 multiplexer                            : 1
+ 16-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <interfaz/uart/uart_tx/state_rnm0/FSM> on signal <state_rnm0[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <interfaz/uart/uart_rx/state_rnm0/FSM> on signal <state_rnm0[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <interfaz/divisor/state_rnm0/FSM> on signal <state_rnm0[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 010   | 10
+-------------------
+WARNING:Xst:1290 - Hierarchical block <uart_rx> is unconnected in block <uart>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fifo_rx> is unconnected in block <uart>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <FIFO_1>.
+INFO:Xst:3217 - HDL ADVISOR - Register <aux_rnm0> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_cola_circular> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <w_ptr_reg>     |          |
+    |     diA            | connected to signal <w_data>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <r_ptr_reg>     |          |
+    |     doB            | connected to signal <r_data>        |          |
+    -----------------------------------------------------------------------
+Unit <FIFO_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <FIFO_2>.
+INFO:Xst:3217 - HDL ADVISOR - Register <b> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_cola_circular> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <wr_en>         | high     |
+    |     addrA          | connected to signal <w_ptr_reg>     |          |
+    |     diA            | connected to signal <w_data>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     addrB          | connected to signal <r_ptr_reg>     |          |
+    |     doB            | connected to signal <r_data>        |          |
+    -----------------------------------------------------------------------
+Unit <FIFO_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ProgramMemory>.
+INFO:Xst:3044 - The ROM <Mrom__COND_1> will be implemented as a read-only BLOCK RAM, absorbing the register: <DATA>.
+INFO:Xst:3225 - The RAM <Mrom__COND_1> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 33-word x 16-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     enA            | connected to signal <RESET>         | low      |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <DATA>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ProgramMemory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# RAMs                                                 : 4
+ 32x8-bit dual-port distributed RAM                    : 3
+ 33x16-bit single-port block RAM                       : 1
+# Adders/Subtractors                                   : 16
+ 11-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 6
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 313
+ Flip-Flops                                            : 313
+# Latches                                              : 3
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 11
+ 5-bit comparator equal                                : 6
+ 5-bit comparator greater                              : 1
+ 8-bit comparator greatequal                           : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 9
+ 1-bit 4-to-1 multiplexer                              : 6
+ 16-bit 10-to-1 multiplexer                            : 1
+ 16-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <b_0> (without init value) has a constant value of 0 in block <Rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_1> (without init value) has a constant value of 0 in block <Rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_2> (without init value) has a constant value of 0 in block <Rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_3> (without init value) has a constant value of 0 in block <Rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_4> (without init value) has a constant value of 0 in block <Rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_5> (without init value) has a constant value of 0 in block <Rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_6> (without init value) has a constant value of 0 in block <Rx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_7> (without init value) has a constant value of 0 in block <Rx>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <TP3> ...
+
+Optimizing unit <DataMemory> ...
+
+Optimizing unit <FIFO_1> ...
+
+Optimizing unit <Rx> ...
+
+Optimizing unit <FIFO_2> ...
+
+Optimizing unit <Tx> ...
+
+Optimizing unit <InstructionDecoder> ...
+
+Optimizing unit <Int_Tx> ...
+
+Optimizing unit <DataPath> ...
+
+Optimizing unit <Control> ...
+WARNING:Xst:2677 - Node <bip/DM/OUT_DATA_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/OUT_DATA_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/OUT_DATA_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/OUT_DATA_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/OUT_DATA_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/OUT_DATA_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/OUT_DATA_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/OUT_DATA_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_8_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_8_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_8_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_8_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_8_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_8_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_8_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_8_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_7_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_7_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_7_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_7_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_7_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_7_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_7_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_7_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_9_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_9_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_9_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_9_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_9_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_9_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_9_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_9_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_5_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_5_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_5_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_5_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_5_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_5_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_5_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_5_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_4_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_4_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_4_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_4_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_4_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_4_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_4_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_4_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_6_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_6_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_6_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_6_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_6_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_6_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_6_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_6_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_3_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_3_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_3_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_3_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_3_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_3_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_3_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_3_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_2_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_2_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_2_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_2_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_2_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_2_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_2_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_2_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_1_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_1_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_1_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_1_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_1_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_1_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_1_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_1_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_0_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_0_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_0_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_0_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_0_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_0_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_0_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/DM/data_list_0_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/uart_rx/state_rnm0_FSM_FFd2> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/uart_rx/state_rnm0_FSM_FFd1> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/uart_rx/s_3> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/uart_rx/s_2> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/uart_rx/s_1> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/uart_rx/s_0> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/uart_rx/n_2> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/uart_rx/n_1> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/uart_rx/n_0> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular16> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular7> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular6> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular5> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular4> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular3> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular2> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/Mram_cola_circular1> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/empty_reg> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/full_reg> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/w_ptr_reg_4> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/w_ptr_reg_3> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/w_ptr_reg_2> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/w_ptr_reg_1> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/w_ptr_reg_0> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/r_ptr_reg_4> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/r_ptr_reg_3> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/r_ptr_reg_2> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/r_ptr_reg_1> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <interfaz/uart/fifo_rx/r_ptr_reg_0> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_15> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_14> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_13> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_12> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_11> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/control/OPERAND_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/control/OPERAND_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/control/OPERAND_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/control/PC_10> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/control/PC_9> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/control/PC_8> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/control/PC_7> of sequential type is unconnected in block <TP3>.
+WARNING:Xst:2677 - Node <bip/cpu/control/PC_6> of sequential type is unconnected in block <TP3>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TP3, actual ratio is 23.
+FlipFlop bip/cpu/control/OPERAND_0 has been replicated 1 time(s)
+FlipFlop bip/cpu/control/OPERAND_1 has been replicated 1 time(s)
+FlipFlop bip/cpu/control/OPERAND_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 197
+ Flip-Flops                                            : 197
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TP3.ngr
+Top Level Output File Name         : TP3
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 496
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 12
+#      LUT2                        : 22
+#      LUT2_D                      : 4
+#      LUT2_L                      : 11
+#      LUT3                        : 124
+#      LUT3_D                      : 9
+#      LUT3_L                      : 8
+#      LUT4                        : 158
+#      LUT4_D                      : 18
+#      LUT4_L                      : 26
+#      MUXCY                       : 25
+#      MUXF5                       : 35
+#      MUXF6                       : 8
+#      VCC                         : 1
+#      XORCY                       : 29
+# FlipFlops/Latches                : 208
+#      FDC                         : 74
+#      FDCE                        : 86
+#      FDE                         : 34
+#      FDP                         : 3
+#      LD                          : 11
+# RAMS                             : 33
+#      RAM16X1D                    : 32
+#      RAMB16_S18                  : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      210  out of    960    21%  
+ Number of Slice Flip Flops:            208  out of   1920    10%  
+ Number of 4 input LUTs:                461  out of   1920    24%  
+    Number used as logic:               397
+    Number used as RAMs:                 64
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of     83     3%  
+ Number of BRAMs:                         1  out of      4    25%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+Clock Signal                                                                               | Clock buffer(FF name)                      | Load  |
+-------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+CLK                                                                                        | BUFGP                                      | 230   |
+interfaz/divisor/state_rnm0_FSM_FFd1                                                       | NONE(interfaz/divisor/data_fifo_7)         | 8     |
+bip/cpu/control/InstrDecoder/SEL_A_not0001(bip/cpu/control/InstrDecoder/SEL_A_not0001_f5:O)| NONE(*)(bip/cpu/control/InstrDecoder/SEL_B)| 3     |
+-------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 163   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.931ns (Maximum Frequency: 126.088MHz)
+   Minimum input arrival time before clock: 5.259ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 7.931ns (frequency: 126.088MHz)
+  Total number of paths / destination ports: 4428 / 593
+-------------------------------------------------------------------------
+Delay:               7.931ns (Levels of Logic = 5)
+  Source:            interfaz/divisor/aux_rnm0_4 (FF)
+  Destination:       interfaz/divisor/j_rnm0_3 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: interfaz/divisor/aux_rnm0_4 to interfaz/divisor/j_rnm0_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.591   0.883  interfaz/divisor/aux_rnm0_4 (interfaz/divisor/aux_rnm0_4)
+     LUT3_D:I0->O          4   0.704   0.591  interfaz/divisor/flag_next_cmp_ge00001_SW0 (N71)
+     LUT4_D:I3->O         15   0.704   1.021  interfaz/divisor/flag_next_cmp_ge00001 (interfaz/divisor/flag_next_cmp_ge0000)
+     LUT4:I3->O            2   0.704   0.451  interfaz/divisor/j_next<0>11 (interfaz/divisor/N28)
+     LUT4_D:I3->O          3   0.704   0.566  interfaz/divisor/j_next<0>12 (interfaz/divisor/N16)
+     LUT4:I2->O            1   0.704   0.000  interfaz/divisor/j_next<3> (interfaz/divisor/j_next<3>)
+     FDE:D                     0.308          interfaz/divisor/j_rnm0_3
+    ----------------------------------------
+    Total                      7.931ns (4.419ns logic, 3.512ns route)
+                                       (55.7% logic, 44.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 35 / 35
+-------------------------------------------------------------------------
+Offset:              5.259ns (Levels of Logic = 2)
+  Source:            RESET (PAD)
+  Destination:       bip/PM/Mrom__COND_1 (RAM)
+  Destination Clock: CLK rising
+
+  Data Path: RESET to bip/PM/Mrom__COND_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           164   1.218   1.304  RESET_IBUF (RESET_IBUF)
+     INV:I->O             35   0.704   1.263  RESET_inv_INV_0 (RESET_inv)
+     RAMB16_S18:EN             0.770          bip/PM/Mrom__COND_1
+    ----------------------------------------
+    Total                      5.259ns (2.692ns logic, 2.567ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            interfaz/uart/uart_tx/tx_reg (FF)
+  Destination:       TX (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: interfaz/uart/uart_tx/tx_reg to TX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.591   0.420  interfaz/uart/uart_tx/tx_reg (interfaz/uart/uart_tx/tx_reg)
+     OBUF:I->O                 3.272          TX_OBUF (TX)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.44 secs
+ 
+--> 
+
+Total memory usage is 268944 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  190 (   0 filtered)
+Number of infos    :   24 (   0 filtered)
+

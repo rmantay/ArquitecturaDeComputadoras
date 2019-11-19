@@ -1,0 +1,5 @@
+set -tmpdir "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/xst/projnav.tmp"
+set -xsthdpdir "D:/workspace/ArquitecturaDeComputadoras/TP3_BIP/xst"
+elaborate
+-ifn BIP_I.prj
+-ifmt mixed
