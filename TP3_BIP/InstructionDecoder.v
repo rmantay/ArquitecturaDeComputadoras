@@ -72,7 +72,7 @@ module InstructionDecoder(
 				begin
 					WR_PC=1;
 					SEL_A = 2'b01;
-					SEL_B = 1'b1;
+					SEL_B = 1'b0;
 					WR_ACC= 1;
 					OP=0;
 					WR_RAM=0;

@@ -241,7 +241,7 @@ LAB29:    xsi_set_current_line(73, ng0);
     t3 = (t0 + 920);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 2);
     xsi_set_current_line(75, ng0);
-    t2 = ((char*)((ng3)));
+    t2 = ((char*)((ng1)));
     t3 = (t0 + 1012);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     xsi_set_current_line(76, ng0);

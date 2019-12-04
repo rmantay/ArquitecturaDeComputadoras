@@ -384,6 +384,6 @@ LAB9:    xsi_set_current_line(55, ng0);
 extern void work_m_00000000003379415906_2058220583_init()
 {
 	static char *pe[] = {(void *)Always_44_0,(void *)Always_51_1};
-	xsi_register_didat("work_m_00000000003379415906_2058220583", "isim/PruebaCpu_isim_beh.exe.sim/work/m_00000000003379415906_2058220583.didat");
+	xsi_register_didat("work_m_00000000003379415906_2058220583", "isim/CPU_isim_beh.exe.sim/work/m_00000000003379415906_2058220583.didat");
 	xsi_register_executes(pe);
 }

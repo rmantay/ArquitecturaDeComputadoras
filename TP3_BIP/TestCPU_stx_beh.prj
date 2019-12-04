@@ -1,5 +1,3 @@
-verilog isim_temp "SUB.v"
-verilog isim_temp "ADD.v"
 verilog isim_temp "Mux2.v"
 verilog isim_temp "Mux.v"
 verilog isim_temp "InstructionDecoder.v"

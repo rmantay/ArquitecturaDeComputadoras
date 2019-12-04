@@ -40,7 +40,7 @@ module DataPath(
 	
 	assign signal_extension = {5'b00000, OPERAND_IN};
 	
-	always @(posedge CLK, posedge RESET)
+	always @(negedge CLK, posedge RESET)
 		begin
 			if(RESET)
 				begin

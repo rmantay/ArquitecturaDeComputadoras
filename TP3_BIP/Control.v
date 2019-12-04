@@ -29,14 +29,14 @@ module Control(
 		output OP,
 		output WR_RAM,
 		output RD_RAM,
-		output reg [10:0] OPERAND,
+		output [10:0] OPERAND,
 		output reg [10:0] PC
     );
 	 
 	 wire [10:0] result;
 	 wire WrPC;
 	 
-	 reg [4:0] opcode;
+	 wire [4:0] opcode;
 	 reg [10:0] PC_next;
 	 reg OpPC;
 	 reg [10:0] cte;
@@ -48,7 +48,7 @@ module Control(
 				PC_next = result;
 		 end
 		
-	always @(posedge CLK, posedge RESET)
+	always @(negedge CLK, posedge RESET)
 		begin
 			if(RESET)
 				begin
@@ -59,10 +59,11 @@ module Control(
 			else
 				begin
 					PC<=PC_next;
-					opcode<= INSTRUCTION[15:11];
-					OPERAND<= INSTRUCTION[10:0];
 				end
 		end
+	
+	assign opcode= INSTRUCTION[15:11];
+	assign OPERAND= INSTRUCTION[10:0];
 
 	InstructionDecoder InstrDecoder (
     .OPCODE(opcode), 

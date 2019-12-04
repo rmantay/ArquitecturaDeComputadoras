@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: TP3.prj
 
@@ -328,9 +328,9 @@ Module <Tx> is correct for synthesis.
 =========================================================================
 
 Performing bidirectional port resolution...
-INFO:Xst:2679 - Register <buffer<0>> in unit <ProgramMemory> has a constant value of 0000100000000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<0>> in unit <ProgramMemory> has a constant value of 0001100000000011 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <buffer<1>> in unit <ProgramMemory> has a constant value of 0000100000000001 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <buffer<2>> in unit <ProgramMemory> has a constant value of 0001100000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <buffer<2>> in unit <ProgramMemory> has a constant value of 0010000000000001 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <buffer<3>> in unit <ProgramMemory> has a constant value of 0010100000000100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <buffer<4>> in unit <ProgramMemory> has a constant value of 0010100000000100 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <buffer<5>> in unit <ProgramMemory> has a constant value of 0010100000000100 during circuit operation. The register is replaced by logic.
@@ -556,12 +556,10 @@ Unit <Tx> synthesized.
 
 Synthesizing Unit <Control>.
     Related source file is "Control.v".
-    Found 11-bit register for signal <OPERAND>.
     Found 11-bit register for signal <PC>.
-    Found 5-bit register for signal <opcode>.
     Found 5-bit comparator greater for signal <PC_next$cmp_gt0000> created at line 47.
     Summary:
-	inferred  27 D-type flip-flop(s).
+	inferred  11 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <Control> synthesized.
 
@@ -598,8 +596,6 @@ Synthesizing Unit <BIP_I>.
     Related source file is "BIP_I.v".
 WARNING:Xst:1780 - Signal <tx_full> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <RESULT> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <PC_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <PC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <WR_FIFO>.
     Summary:
 	inferred   1 D-type flip-flop(s).
@@ -608,6 +604,7 @@ Unit <BIP_I> synthesized.
 
 Synthesizing Unit <TP3>.
     Related source file is "TP3.v".
+WARNING:Xst:646 - Signal <led<10:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <TP3> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -630,13 +627,13 @@ Macro Statistics
  8-bit subtractor                                      : 1
 # Counters                                             : 1
  8-bit up counter                                      : 1
-# Registers                                            : 41
+# Registers                                            : 39
  1-bit register                                        : 10
- 11-bit register                                       : 2
+ 11-bit register                                       : 1
  16-bit register                                       : 13
  3-bit register                                        : 2
  4-bit register                                        : 2
- 5-bit register                                        : 7
+ 5-bit register                                        : 6
  8-bit register                                        : 5
 # Latches                                              : 3
  1-bit latch                                           : 1
@@ -699,7 +696,7 @@ INFO:Xst:3217 - HDL ADVISOR - Register <aux_rnm0> currently described with an as
     -----------------------------------------------------------------------
     | Port A                                                              |
     |     aspect ratio   | 32-word x 8-bit                     |          |
-    |     clkA           | connected to signal <CLK>           | rise     |
+    |     clkA           | connected to signal <CLK>           | fall     |
     |     weA            | connected to signal <wr_en>         | high     |
     |     addrA          | connected to signal <w_ptr_reg>     |          |
     |     diA            | connected to signal <w_data>        |          |
@@ -718,7 +715,7 @@ INFO:Xst:3217 - HDL ADVISOR - Register <b> currently described with an asynchron
     -----------------------------------------------------------------------
     | Port A                                                              |
     |     aspect ratio   | 32-word x 8-bit                     |          |
-    |     clkA           | connected to signal <CLK>           | rise     |
+    |     clkA           | connected to signal <CLK>           | fall     |
     |     weA            | connected to signal <wr_en>         | high     |
     |     addrA          | connected to signal <w_ptr_reg>     |          |
     |     diA            | connected to signal <w_data>        |          |
@@ -768,8 +765,8 @@ Macro Statistics
  8-bit subtractor                                      : 1
 # Counters                                             : 1
  8-bit up counter                                      : 1
-# Registers                                            : 313
- Flip-Flops                                            : 313
+# Registers                                            : 297
+ Flip-Flops                                            : 297
 # Latches                                              : 3
  1-bit latch                                           : 1
  2-bit latch                                           : 1
@@ -950,21 +947,13 @@ WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_11> of sequential type is unconne
 WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_10> of sequential type is unconnected in block <TP3>.
 WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_9> of sequential type is unconnected in block <TP3>.
 WARNING:Xst:2677 - Node <bip/cpu/data_path/ACC_8> of sequential type is unconnected in block <TP3>.
-WARNING:Xst:2677 - Node <bip/cpu/control/OPERAND_10> of sequential type is unconnected in block <TP3>.
-WARNING:Xst:2677 - Node <bip/cpu/control/OPERAND_9> of sequential type is unconnected in block <TP3>.
-WARNING:Xst:2677 - Node <bip/cpu/control/OPERAND_8> of sequential type is unconnected in block <TP3>.
 WARNING:Xst:2677 - Node <bip/cpu/control/PC_10> of sequential type is unconnected in block <TP3>.
 WARNING:Xst:2677 - Node <bip/cpu/control/PC_9> of sequential type is unconnected in block <TP3>.
 WARNING:Xst:2677 - Node <bip/cpu/control/PC_8> of sequential type is unconnected in block <TP3>.
-WARNING:Xst:2677 - Node <bip/cpu/control/PC_7> of sequential type is unconnected in block <TP3>.
-WARNING:Xst:2677 - Node <bip/cpu/control/PC_6> of sequential type is unconnected in block <TP3>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block TP3, actual ratio is 23.
-FlipFlop bip/cpu/control/OPERAND_0 has been replicated 1 time(s)
-FlipFlop bip/cpu/control/OPERAND_1 has been replicated 1 time(s)
-FlipFlop bip/cpu/control/OPERAND_2 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -972,8 +961,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 197
- Flip-Flops                                            : 197
+# Registers                                            : 183
+ Flip-Flops                                            : 183
 
 =========================================================================
 
@@ -999,41 +988,41 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 3
+# IOs                              : 11
 
 Cell Usage :
-# BELS                             : 496
+# BELS                             : 506
 #      GND                         : 1
-#      INV                         : 5
-#      LUT1                        : 12
-#      LUT2                        : 22
-#      LUT2_D                      : 4
-#      LUT2_L                      : 11
-#      LUT3                        : 124
-#      LUT3_D                      : 9
-#      LUT3_L                      : 8
-#      LUT4                        : 158
-#      LUT4_D                      : 18
-#      LUT4_L                      : 26
-#      MUXCY                       : 25
-#      MUXF5                       : 35
+#      INV                         : 6
+#      LUT1                        : 14
+#      LUT2                        : 38
+#      LUT2_D                      : 1
+#      LUT3                        : 118
+#      LUT3_D                      : 3
+#      LUT4                        : 196
+#      LUT4_D                      : 4
+#      LUT4_L                      : 8
+#      MUXCY                       : 27
+#      MUXF5                       : 50
 #      MUXF6                       : 8
 #      VCC                         : 1
-#      XORCY                       : 29
-# FlipFlops/Latches                : 208
-#      FDC                         : 74
-#      FDCE                        : 86
-#      FDE                         : 34
-#      FDP                         : 3
+#      XORCY                       : 31
+# FlipFlops/Latches                : 194
+#      FDC                         : 35
+#      FDC_1                       : 39
+#      FDCE_1                      : 88
+#      FDE                         : 18
+#      FDP                         : 1
+#      FDP_1                       : 2
 #      LD                          : 11
 # RAMS                             : 33
 #      RAM16X1D                    : 32
 #      RAMB16_S18                  : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 2
+# IO Buffers                       : 10
 #      IBUF                        : 1
-#      OBUF                        : 1
+#      OBUF                        : 9
 =========================================================================
 
 Device utilization summary:
@@ -1041,13 +1030,13 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      210  out of    960    21%  
- Number of Slice Flip Flops:            208  out of   1920    10%  
- Number of 4 input LUTs:                461  out of   1920    24%  
-    Number used as logic:               397
+ Number of Slices:                      208  out of    960    21%  
+ Number of Slice Flip Flops:            194  out of   1920    10%  
+ Number of 4 input LUTs:                452  out of   1920    23%  
+    Number used as logic:               388
     Number used as RAMs:                 64
- Number of IOs:                           3
- Number of bonded IOBs:                   3  out of     83     3%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of     83    13%  
  Number of BRAMs:                         1  out of      4    25%  
  Number of GCLKs:                         1  out of     24     4%  
 
@@ -1072,7 +1061,7 @@ Clock Information:
 -------------------------------------------------------------------------------------------+--------------------------------------------+-------+
 Clock Signal                                                                               | Clock buffer(FF name)                      | Load  |
 -------------------------------------------------------------------------------------------+--------------------------------------------+-------+
-CLK                                                                                        | BUFGP                                      | 230   |
+CLK                                                                                        | BUFGP                                      | 216   |
 interfaz/divisor/state_rnm0_FSM_FFd1                                                       | NONE(interfaz/divisor/data_fifo_7)         | 8     |
 bip/cpu/control/InstrDecoder/SEL_A_not0001(bip/cpu/control/InstrDecoder/SEL_A_not0001_f5:O)| NONE(*)(bip/cpu/control/InstrDecoder/SEL_B)| 3     |
 -------------------------------------------------------------------------------------------+--------------------------------------------+-------+
@@ -1086,16 +1075,16 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-RESET                              | IBUF                   | 163   |
+RESET                              | IBUF                   | 165   |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 7.931ns (Maximum Frequency: 126.088MHz)
-   Minimum input arrival time before clock: 5.259ns
-   Maximum output required time after clock: 4.283ns
+   Minimum period: 19.738ns (Maximum Frequency: 50.664MHz)
+   Minimum input arrival time before clock: 5.082ns
+   Maximum output required time after clock: 4.394ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -1104,35 +1093,42 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 7.931ns (frequency: 126.088MHz)
-  Total number of paths / destination ports: 4428 / 593
+  Clock period: 19.738ns (frequency: 50.664MHz)
+  Total number of paths / destination ports: 4629 / 581
 -------------------------------------------------------------------------
-Delay:               7.931ns (Levels of Logic = 5)
-  Source:            interfaz/divisor/aux_rnm0_4 (FF)
-  Destination:       interfaz/divisor/j_rnm0_3 (FF)
+Delay:               9.869ns (Levels of Logic = 12)
+  Source:            bip/PM/Mrom__COND_1 (RAM)
+  Destination:       bip/cpu/data_path/ACC_7 (FF)
   Source Clock:      CLK rising
-  Destination Clock: CLK rising
+  Destination Clock: CLK falling
 
-  Data Path: interfaz/divisor/aux_rnm0_4 to interfaz/divisor/j_rnm0_3
+  Data Path: bip/PM/Mrom__COND_1 to bip/cpu/data_path/ACC_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              7   0.591   0.883  interfaz/divisor/aux_rnm0_4 (interfaz/divisor/aux_rnm0_4)
-     LUT3_D:I0->O          4   0.704   0.591  interfaz/divisor/flag_next_cmp_ge00001_SW0 (N71)
-     LUT4_D:I3->O         15   0.704   1.021  interfaz/divisor/flag_next_cmp_ge00001 (interfaz/divisor/flag_next_cmp_ge0000)
-     LUT4:I3->O            2   0.704   0.451  interfaz/divisor/j_next<0>11 (interfaz/divisor/N28)
-     LUT4_D:I3->O          3   0.704   0.566  interfaz/divisor/j_next<0>12 (interfaz/divisor/N16)
-     LUT4:I2->O            1   0.704   0.000  interfaz/divisor/j_next<3> (interfaz/divisor/j_next<3>)
-     FDE:D                     0.308          interfaz/divisor/j_rnm0_3
+     RAMB16_S18:CLK->DO0   28   2.800   1.296  bip/PM/Mrom__COND_1 (bip/INSTRUCTION<0>)
+     LUT3:I2->O            1   0.704   0.499  bip/cpu/data_path/mux1/OUT<0>1 (bip/cpu/data_path/out_mux1<0>)
+     LUT3:I1->O            1   0.704   0.000  bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_lut<0> (bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<0> (bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<1> (bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<2> (bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<3> (bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<4> (bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<5> (bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<6> (bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_cy<6>)
+     XORCY:CI->O           1   0.804   0.424  bip/cpu/data_path/alu2/Maddsub_Z_addsub0000_xor<7> (bip/cpu/data_path/alu_out<7>)
+     LUT4_L:I3->LO         1   0.704   0.104  bip/cpu/data_path/acc_next<7>20 (bip/cpu/data_path/acc_next<7>20)
+     LUT4:I3->O            1   0.704   0.000  bip/cpu/data_path/acc_next<7>47 (bip/cpu/data_path/acc_next<7>)
+     FDC_1:D                   0.308          bip/cpu/data_path/ACC_7
     ----------------------------------------
-    Total                      7.931ns (4.419ns logic, 3.512ns route)
-                                       (55.7% logic, 44.3% route)
+    Total                      9.869ns (7.546ns logic, 2.323ns route)
+                                       (76.5% logic, 23.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 35 / 35
+  Total number of paths / destination ports: 19 / 19
 -------------------------------------------------------------------------
-Offset:              5.259ns (Levels of Logic = 2)
+Offset:              5.082ns (Levels of Logic = 2)
   Source:            RESET (PAD)
   Destination:       bip/PM/Mrom__COND_1 (RAM)
   Destination Clock: CLK rising
@@ -1141,43 +1137,43 @@ Offset:              5.259ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           164   1.218   1.304  RESET_IBUF (RESET_IBUF)
-     INV:I->O             35   0.704   1.263  RESET_inv_INV_0 (RESET_inv)
+     IBUF:I->O           166   1.218   1.305  RESET_IBUF (RESET_IBUF)
+     INV:I->O             19   0.704   1.085  RESET_inv_INV_0 (RESET_inv)
      RAMB16_S18:EN             0.770          bip/PM/Mrom__COND_1
     ----------------------------------------
-    Total                      5.259ns (2.692ns logic, 2.567ns route)
-                                       (51.2% logic, 48.8% route)
+    Total                      5.082ns (2.692ns logic, 2.390ns route)
+                                       (53.0% logic, 47.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 9 / 9
 -------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            interfaz/uart/uart_tx/tx_reg (FF)
-  Destination:       TX (PAD)
-  Source Clock:      CLK rising
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            bip/cpu/control/PC_5 (FF)
+  Destination:       LEDS<5> (PAD)
+  Source Clock:      CLK falling
 
-  Data Path: interfaz/uart/uart_tx/tx_reg to TX
+  Data Path: bip/cpu/control/PC_5 to LEDS<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              1   0.591   0.420  interfaz/uart/uart_tx/tx_reg (interfaz/uart/uart_tx/tx_reg)
-     OBUF:I->O                 3.272          TX_OBUF (TX)
+     FDCE_1:C->Q           3   0.591   0.531  bip/cpu/control/PC_5 (bip/cpu/control/PC_5)
+     OBUF:I->O                 3.272          LEDS_5_OBUF (LEDS<5>)
     ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.44 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.28 secs
  
 --> 
 
-Total memory usage is 268944 kilobytes
+Total memory usage is 269328 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  190 (   0 filtered)
+Number of warnings :  184 (   0 filtered)
 Number of infos    :   24 (   0 filtered)
 

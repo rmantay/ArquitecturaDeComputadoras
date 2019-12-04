@@ -32,9 +32,9 @@ module ProgramMemory(
 		if(RESET)
 			begin
 
-				buffer[0] <= 16'b0000100000000001;	// STO 1
+				buffer[0] <= 16'b0001100000000011;	// LDI 3
 				buffer[1] <= 16'b0000100000000001; 	// STO 1
-				buffer[2] <= 16'b0001100000000000; 	// LDI 0
+				buffer[2] <= 16'b0010000000000001; 	// ADD 1				6
 				buffer[3] <= 16'b0010100000000100; 	// ADDI 4
 				buffer[4] <= 16'b0010100000000100; 	// ADDI 4
 				buffer[5] <= 16'b0010100000000100; 	// ADDI 4	
@@ -45,6 +45,7 @@ module ProgramMemory(
 				buffer[10] <= 16'b0001100000000001;	//	LDI 1
 				buffer[11] <= 16'b0010100000000101;	//	ADDI 5 
 				buffer[12] <= 16'b0000000000000000;	//	HLT
+				//DATA <= buffer[ADDR];
 
 
 			end

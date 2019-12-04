@@ -21,17 +21,23 @@
 module TP3(
 		input CLK,
 		input RESET,
-		output wire TX
+		output wire TX,
+		output [7:0] LEDS
     );
 
 wire [15:0] acc;
 wire wr;
 
+wire [10:0] led;
+
+assign LEDS = led[7:0];
+
 BIP_I bip (
     .CLK(CLK), 
     .RESET(RESET), 
     .ACC_OUT(acc),
-	 .WR_FIFO(wr)
+	 .WR_FIFO(wr),
+	 .pc(led)
     );
 	 
 Interface interfaz (

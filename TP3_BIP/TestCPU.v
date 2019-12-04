@@ -36,6 +36,7 @@ module TestCPU;
 	wire [15:0] ACC;
 	wire RD;
 	wire WR;
+	
 
 	// Instantiate the Unit Under Test (UUT)
 	CPU uut (
@@ -66,39 +67,39 @@ module TestCPU;
 		DM_IN = 0;
 		// Add stimulus here
 		
-		#100;
+		#2;
 		
 		INSTRUCTION = 16'b0001100000000100; //LDI 4 
 		DM_IN = 15;
 		
-		#100;
+		#2;
        
 		INSTRUCTION = 16'b0000100000000010; // sto 2
 		DM_IN = 10;
 		
-		#100;
+		#2;
        
 		INSTRUCTION = 16'b0001000000000010; // LD 2
 		DM_IN = 10;
 		
-		#100;
+		#2;
        
 	
        
 		INSTRUCTION = 16'b0010000000000001; //ADD 1
 		DM_IN = 10;
 		
-		#100;
+		#2;
        
 		INSTRUCTION = 16'b0010100000000100; //ADDI 4
 		DM_IN = 0;
 		
-		#100;
+		#2;
        
 		INSTRUCTION = 16'b0001100000000001; //SUB 1 
 		DM_IN = 5;
 		
-		#100;
+		#2;
        
 		INSTRUCTION = 16'b0011100000000001; //SUBI 1
 		DM_IN = 0;

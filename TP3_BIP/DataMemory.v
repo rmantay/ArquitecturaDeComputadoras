@@ -31,7 +31,7 @@ module DataMemory(
 	 reg [15:0] data_list [9:0];
 	 reg [3:0] i;
 	 
-	 always @(posedge CLK, posedge RESET)
+	 always @(negedge CLK, posedge RESET)
 	 begin
 		if(RESET)
 			begin

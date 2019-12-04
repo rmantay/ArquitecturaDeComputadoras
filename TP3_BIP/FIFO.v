@@ -39,7 +39,7 @@ parameter
 	
 	wire wr_en;
 	
-	always @(posedge CLK)
+	always @(negedge CLK)
 	if (wr_en)
 		cola_circular[w_ptr_reg] <= w_data;
 	
@@ -47,7 +47,7 @@ parameter
 	
 	assign wr_en = wr & ~full_reg;
 
-	always @(posedge CLK, posedge RESET)
+	always @(negedge CLK, posedge RESET)
 	begin
 		if(RESET)
 		begin

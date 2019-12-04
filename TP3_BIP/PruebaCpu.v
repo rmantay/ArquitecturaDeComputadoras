@@ -103,7 +103,9 @@ ProgramMemory programmemory (
 	
 	always 
 	begin
-	#1 CLK =~CLK;
+	CLK = 0;
+	#50 CLK = 1;
+	#50;
 	end
 	
 	

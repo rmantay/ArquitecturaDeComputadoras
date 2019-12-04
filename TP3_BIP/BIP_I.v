@@ -23,7 +23,8 @@ module BIP_I(
 		input RESET,
 		
 		output [15:0] ACC_OUT,
-		output reg WR_FIFO
+		output reg WR_FIFO,
+		output [10:0] pc
 		
 
     );
@@ -35,7 +36,6 @@ module BIP_I(
 		wire [10:0] ADDR_PM;
 		wire [10:0] ADDR_DM;
 		wire [15:0] ACC;
-		reg [10:0] PC, PC_next;
 		wire RD;
 		wire WR;
 				
@@ -44,8 +44,8 @@ module BIP_I(
 		wire wr_acc;
 		reg wr_fifo_next = 0;
 		
-		assign ACC_OUT = ACC;
 		//assign WR_FIFO = wr_fifo;
+
 	 
 	 ProgramMemory PM (
     .CLK(CLK), 
@@ -88,7 +88,7 @@ module BIP_I(
 		
 	end
 	
-	always @(posedge CLK, posedge RESET)
+	always @(negedge CLK, posedge RESET)
 	begin
 		if(RESET)
 			begin
@@ -101,6 +101,7 @@ module BIP_I(
 	end
 	 
 
-
+	assign pc = ADDR_PM;
+	assign ACC_OUT = ACC;
 
 endmodule
